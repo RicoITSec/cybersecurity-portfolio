@@ -20,8 +20,6 @@ Professional portfolio focused on junior IAM, identity security, SOC and cyberse
 6. **Developer CV Website** — HTML, CSS, JS, PHP, Bootstrap
 7. **Top 5 Actrices** — jQuery, DOM interaction, animation
 8. **Robbie Lens** — Multi-page photography portfolio
-9. **Travel Agency** — Foundational HTML/CSS landing site
-10. **Python Fundamentals Exercises** — Training archive
 
 The main recruiter-facing development projects have been consolidated under `RicoITSec`. Only a small number of legacy learning projects remain on the earlier `Rico-9` account until migration is complete; the recruiter-facing projects including Top-5-actrices and Robbie-Lens are now under `RicoITSec`.
 
