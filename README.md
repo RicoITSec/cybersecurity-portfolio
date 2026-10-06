@@ -23,7 +23,7 @@ Professional portfolio focused on junior IAM, identity security, SOC and cyberse
 9. **Travel Agency** — Foundational HTML/CSS landing site
 10. **Python Fundamentals Exercises** — Training archive
 
-The original public source repositories are currently hosted under the earlier GitHub account `Rico-9`. They remain publicly readable and are being consolidated into the current professional portfolio.
+The main recruiter-facing development projects have been consolidated under `RicoITSec`. A small number of legacy learning projects remain on the earlier `Rico-9` account until migration is complete.
 
 ## Live site
 
