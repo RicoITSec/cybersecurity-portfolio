@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Cybersecurity & Identity Security Portfolio</title>
+<meta name="description" content="Junior IAM / Identity Security Analyst and Cybersecurity Analyst portfolio featuring Microsoft Entra ID, SOC, incident response, Python, SQL and Linux projects.">
+<style>
+:root{--bg:#08111f;--panel:#111a2f;--soft:#182540;--text:#f4f7fb;--muted:#aab6ce;--accent:#66d9ef;--line:#29385a}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,system-ui,Segoe UI,Arial,sans-serif;background:linear-gradient(180deg,#07101d,#0b1220 40%,#0d1425);color:var(--text);line-height:1.6}
+.wrap{max-width:1120px;margin:auto;padding:0 24px}header{padding:78px 0 46px;border-bottom:1px solid var(--line)}
+.eyebrow{color:var(--accent);font-weight:800;letter-spacing:.13em;text-transform:uppercase;font-size:.8rem}
+h1{font-size:clamp(2.3rem,6vw,4.7rem);line-height:1.03;margin:.4rem 0 1rem}.lead{font-size:1.15rem;color:var(--muted);max-width:850px}
+.cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}.btn{display:inline-block;padding:11px 16px;border-radius:10px;text-decoration:none;font-weight:750;border:1px solid var(--line);background:var(--panel);color:var(--text)}.btn.primary{background:var(--accent);color:#06111b;border-color:var(--accent)}
+section{padding:48px 0}.section-title{font-size:1.8rem;margin:0 0 20px}.grid{display:grid;grid-template-columns:repeat(12,1fr);gap:18px}
+.card{grid-column:span 6;background:rgba(17,26,47,.88);border:1px solid var(--line);border-radius:16px;padding:22px}.card h3{margin:0 0 8px}.card p{margin:0;color:var(--muted)}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}.tag{font-size:.79rem;padding:5px 9px;border-radius:999px;background:var(--soft);color:#dce7ff;border:1px solid #31466d}
+.skills{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.skill{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px}.skill b{display:block;margin-bottom:6px}.skill span{color:var(--muted);font-size:.92rem}
+.timeline{display:grid;gap:12px}.row{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px}.row strong{display:block}.row span{color:var(--muted)}
+footer{padding:32px 0 56px;border-top:1px solid var(--line);color:var(--muted)}
+@media(max-width:800px){.card{grid-column:span 12}.skills{grid-template-columns:1fr 1fr}}@media(max-width:520px){.skills{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+<div class="eyebrow">Cybersecurity & Identity Security Portfolio</div>
+<h1>Junior IAM / Identity Security Analyst<br>Cybersecurity Analyst</h1>
+<p class="lead">Hands-on portfolio across identity and access management, Microsoft Entra ID, incident response, phishing analysis, network segmentation, Python, SQL and Linux. Built to demonstrate practical investigation skills, security design thinking and business-aware controls.</p>
+<div class="cta"><a class="btn primary" href="#projects">View Projects</a><a class="btn" href="#skills">Core Skills</a><a class="btn" href="#certifications">Certifications</a></div>
+</div></header>
+<main class="wrap">
+<section id="skills"><h2 class="section-title">Core Skills</h2><div class="skills">
+<div class="skill"><b>Identity & Access</b><span>Microsoft Entra ID, IAM, RBAC, MFA, Conditional Access, SSO, JML, least privilege</span></div>
+<div class="skill"><b>Security Operations</b><span>Incident response, alert triage, phishing analysis, escalation, IOC analysis, threat intelligence</span></div>
+<div class="skill"><b>Technical</b><span>Linux, Bash, SQL, MariaDB, Python, Wireshark, tcpdump, VirusTotal</span></div>
+<div class="skill"><b>Architecture & Governance</b><span>Network segmentation, firewall policy, Zero Trust, NIST-based risk, backups, BYOD, vulnerability management</span></div>
+</div></section>
+
+<section id="projects"><h2 class="section-title">Selected Projects</h2><div class="grid">
+<article class="card"><h3>01 — Microsoft Entra ID Migration & Identity Strategy</h3><p>Hybrid identity case study covering Microsoft Entra Connect / Cloud Sync, password hash synchronization, SSO, enterprise applications, MFA, Conditional Access, RBAC, least privilege and joiner-mover-leaver lifecycle controls.</p><div class="tags"><span class="tag">Entra ID</span><span class="tag">Hybrid Identity</span><span class="tag">MFA</span><span class="tag">RBAC</span><span class="tag">JML</span></div></article>
+<article class="card"><h3>02 — Access Control Incident Investigation</h3><p>Investigated a former contractor account retaining privileged access after the recorded end date. Recommended automated offboarding, RBAC, privileged access governance, MFA and dual approval for sensitive changes.</p><div class="tags"><span class="tag">Access Control</span><span class="tag">PAM</span><span class="tag">Audit Logs</span><span class="tag">Least Privilege</span></div></article>
+<article class="card"><h3>03 — Enterprise Security Strategy</h3><p>Created a layered security roadmap for a multi-site organization, covering data protection, anti-phishing, BYOD, MFA, vulnerability management, incident response, backups and centralized IAM.</p><div class="tags"><span class="tag">Risk</span><span class="tag">Data Protection</span><span class="tag">BYOD</span><span class="tag">Incident Response</span></div></article>
+<article class="card"><h3>04 — Network Segmentation Plan</h3><p>Designed VLAN and firewall segmentation for a 52-device environment, isolating finance, servers, mobile and IoT networks to reduce lateral movement and protect sensitive assets.</p><div class="tags"><span class="tag">VLAN</span><span class="tag">Firewall</span><span class="tag">IoT</span><span class="tag">Zero Trust</span></div></article>
+<article class="card"><h3>05 — Phishing Incident Response & Escalation</h3><p>Performed SOC L1 triage on a phishing alert, validated a malicious password-protected executable, documented evidence using the 5 W's framework and escalated the incident to Level 2.</p><div class="tags"><span class="tag">SOC L1</span><span class="tag">Phishing</span><span class="tag">Triage</span><span class="tag">Playbook</span></div></article>
+<article class="card"><h3>06 — Malware & Threat Intelligence Analysis</h3><p>Used VirusTotal to validate a malicious sample, extracted actionable IOCs and mapped observed behavior to MITRE ATT&CK techniques including process injection, obfuscation and command-and-control activity.</p><div class="tags"><span class="tag">VirusTotal</span><span class="tag">IOC</span><span class="tag">MITRE ATT&CK</span><span class="tag">Threat Intel</span></div></article>
+<article class="card"><h3>07 — Security Automation & Investigation</h3><p>Used Python for allow-list access-control automation, SQL/MariaDB for security investigations, and Linux permissions tooling to remediate excessive access and validate least-privilege changes.</p><div class="tags"><span class="tag">Python</span><span class="tag">SQL</span><span class="tag">Linux</span><span class="tag">Automation</span></div></article>
+</div></section>
+
+<section id="certifications"><h2 class="section-title">Certifications & Professional Learning</h2><div class="timeline">
+<div class="row"><strong>Google Cybersecurity Professional Certificate</strong><span>Completed — September 2026</span></div>
+<div class="row"><strong>Google AI Professional Certificate</strong><span>Completed — August 2026</span></div>
+<div class="row"><strong>Microsoft Cybersecurity Analyst Professional Certificate</strong><span>In progress</span></div>
+</div></section>
+
+<section><h2 class="section-title">Languages</h2><div class="timeline">
+<div class="row"><strong>French</strong><span>Native</span></div>
+<div class="row"><strong>English</strong><span>Fluent</span></div>
+<div class="row"><strong>Japanese</strong><span>Intermediate</span></div>
+<div class="row"><strong>Italian</strong><span>Basic</span></div>
+</div></section>
+</main>
+<footer><div class="wrap">Cybersecurity & Identity Security Portfolio — Updated October 2026</div></footer>
+</body></html>
