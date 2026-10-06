@@ -27,4 +27,4 @@ The original public source repositories are currently hosted under the earlier G
 
 ## Live site
 
-https://ricofitnesstokyo.github.io/cybersecurity-portfolio/
+https://ricoitsec.github.io/cybersecurity-portfolio/
