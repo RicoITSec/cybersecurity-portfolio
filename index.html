@@ -46,7 +46,7 @@ html[data-theme="light"]{color-scheme:light;--bg:#f5f5dc;--bg2:#f0efd8;--bg3:#ec
 h1{font-size:clamp(2.3rem,6vw,4.7rem);line-height:1.03;margin:.4rem 0 1rem}.lead{font-size:1.15rem;color:var(--muted);max-width:850px}
 .cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px;align-items:center}.btn{display:inline-flex;align-items:center;justify-content:center;padding:11px 16px;border-radius:10px;text-decoration:none;font-weight:750;border:1px solid var(--line);background:var(--panel);color:var(--text)}.btn.primary{background:var(--accent);color:#06111b;border-color:var(--accent)}
 section{padding:48px 0}.section-title{font-size:1.8rem;margin:0 0 20px}.grid{display:grid;grid-template-columns:repeat(12,1fr);gap:18px}
-.card{grid-column:span 6;background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:22px}.card h3{margin:0 0 8px}.card p{margin:0;color:var(--muted)}.project-link{display:inline-block;margin-top:14px;color:var(--accent);font-weight:750;text-decoration:none}.project-link:hover{text-decoration:underline}.section-intro{color:var(--muted);max-width:860px;margin:-8px 0 22px}.rank{color:var(--accent);font-weight:800;font-size:.82rem;letter-spacing:.06em;text-transform:uppercase}
+.card{grid-column:span 6;background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:22px}.card h3{margin:0 0 8px}.card p{margin:0;color:var(--muted)}.project-link{display:inline-block;margin-top:14px;color:var(--accent);font-weight:750;text-decoration:none}.project-link:hover{text-decoration:underline}.github-direct{display:inline-flex;align-items:center;margin-top:16px;padding:8px 11px;border:1px solid var(--line);border-radius:9px;background:var(--soft);text-decoration:none}.github-direct:hover{text-decoration:none;transform:translateY(-1px);border-color:var(--accent)}.section-intro{color:var(--muted);max-width:860px;margin:-8px 0 22px}.rank{color:var(--accent);font-weight:800;font-size:.82rem;letter-spacing:.06em;text-transform:uppercase}
 .tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}.tag{font-size:.79rem;padding:5px 9px;border-radius:999px;background:var(--soft);color:var(--tag-text);border:1px solid var(--line)}
 .skills{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.skill{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px}.skill b{display:block;margin-bottom:6px}.skill span{color:var(--muted);font-size:.92rem}
 .snapshot-section{padding-top:34px;padding-bottom:18px}
@@ -102,13 +102,13 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var
 </div>
 </section>
 <section id="projects"><h2 class="section-title">Cybersecurity Case Studies</h2><p class="section-intro">Seven hands-on case studies selected for IAM, SOC L1 and junior cybersecurity recruiting. Each project highlights the problem, investigation or design approach, and the security controls applied.</p><div class="grid">
-<article class="card"><h3>01 — Microsoft Entra ID Migration & Identity Strategy</h3><p>Hybrid identity case study covering Microsoft Entra Connect / Cloud Sync, password hash synchronization, SSO, enterprise applications, MFA, Conditional Access, RBAC, least privilege and joiner-mover-leaver lifecycle controls.</p><div class="tags"><span class="tag">Entra ID</span><span class="tag">Hybrid Identity</span><span class="tag">MFA</span><span class="tag">RBAC</span><span class="tag">JML</span></div><details class="case-details"><summary>View case study details</summary><ul><li><strong>Focus:</strong> hybrid identity and secure migration planning.</li><li><strong>Controls:</strong> MFA, Conditional Access, RBAC, SSO and least privilege.</li><li><strong>Lifecycle:</strong> joiner-mover-leaver access governance.</li></ul></details></article>
-<article class="card"><h3>02 — Access Control Incident Investigation</h3><p>Investigated a former contractor account retaining privileged access after the recorded end date. Recommended automated offboarding, RBAC, privileged access governance, MFA and dual approval for sensitive changes.</p><div class="tags"><span class="tag">Access Control</span><span class="tag">PAM</span><span class="tag">Audit Logs</span><span class="tag">Least Privilege</span></div><details class="case-details"><summary>View investigation details</summary><ul><li><strong>Issue:</strong> privileged access remained active after a contractor end date.</li><li><strong>Evidence:</strong> account status and audit-log review.</li><li><strong>Remediation:</strong> automated offboarding, RBAC, MFA and privileged-access governance.</li></ul></details></article>
-<article class="card"><h3>03 — Enterprise Security Strategy</h3><p>Created a layered security roadmap for a multi-site organization, covering data protection, anti-phishing, BYOD, MFA, vulnerability management, incident response, backups and centralized IAM.</p><div class="tags"><span class="tag">Risk</span><span class="tag">Data Protection</span><span class="tag">BYOD</span><span class="tag">Incident Response</span></div><details class="case-details"><summary>View strategy details</summary><ul><li><strong>Scope:</strong> multi-site security architecture and governance.</li><li><strong>Priorities:</strong> phishing resistance, MFA, vulnerability management and backups.</li><li><strong>Identity:</strong> centralized IAM as a core control layer.</li></ul></details></article>
-<article class="card"><h3>04 — Network Segmentation Plan</h3><p>Designed VLAN and firewall segmentation for a 52-device environment, isolating finance, servers, mobile and IoT networks to reduce lateral movement and protect sensitive assets.</p><div class="tags"><span class="tag">VLAN</span><span class="tag">Firewall</span><span class="tag">IoT</span><span class="tag">Zero Trust</span></div><details class="case-details"><summary>View design details</summary><ul><li><strong>Environment:</strong> 52 devices across business and IoT use cases.</li><li><strong>Design:</strong> VLAN separation with firewall-controlled traffic flows.</li><li><strong>Goal:</strong> reduce lateral movement and protect sensitive systems.</li></ul></details></article>
-<article class="card"><h3>05 — Phishing Incident Response & Escalation</h3><p>Performed SOC L1 triage on a phishing alert, validated a malicious password-protected executable, documented evidence using the 5 W's framework and escalated the incident to Level 2.</p><div class="tags"><span class="tag">SOC L1</span><span class="tag">Phishing</span><span class="tag">Triage</span><span class="tag">Playbook</span></div><details class="case-details"><summary>View response details</summary><ul><li><strong>Role:</strong> SOC L1-style alert triage.</li><li><strong>Analysis:</strong> malicious password-protected executable validation.</li><li><strong>Outcome:</strong> evidence documented with the 5 W's and escalated to Level 2.</li></ul></details></article>
-<article class="card"><h3>06 — Malware & Threat Intelligence Analysis</h3><p>Used VirusTotal to validate a malicious sample, extracted actionable IOCs and mapped observed behavior to MITRE ATT&CK techniques including process injection, obfuscation and command-and-control activity.</p><div class="tags"><span class="tag">VirusTotal</span><span class="tag">IOC</span><span class="tag">MITRE ATT&CK</span><span class="tag">Threat Intel</span></div><details class="case-details"><summary>View analysis details</summary><ul><li><strong>Tooling:</strong> VirusTotal for malicious-sample validation.</li><li><strong>Output:</strong> actionable indicators of compromise.</li><li><strong>Mapping:</strong> MITRE ATT&amp;CK behaviors including injection, obfuscation and C2.</li></ul></details></article>
-<article class="card"><h3>07 — Security Automation & Investigation</h3><p>Used Python for allow-list access-control automation, SQL/MariaDB for security investigations, and Linux permissions tooling to remediate excessive access and validate least-privilege changes.</p><div class="tags"><span class="tag">Python</span><span class="tag">SQL</span><span class="tag">Linux</span><span class="tag">Automation</span></div><details class="case-details"><summary>View technical details</summary><ul><li><strong>Python:</strong> allow-list access-control automation.</li><li><strong>SQL/MariaDB:</strong> security-focused investigation queries.</li><li><strong>Linux:</strong> permission remediation and least-privilege validation.</li></ul></details></article>
+<article class="card"><h3>01 — Microsoft Entra ID Migration & Identity Strategy</h3><p>Hybrid identity case study covering Microsoft Entra Connect / Cloud Sync, password hash synchronization, SSO, enterprise applications, MFA, Conditional Access, RBAC, least privilege and joiner-mover-leaver lifecycle controls.</p><div class="tags"><span class="tag">Entra ID</span><span class="tag">Hybrid Identity</span><span class="tag">MFA</span><span class="tag">RBAC</span><span class="tag">JML</span></div><details class="case-details"><summary>View case study details</summary><ul><li><strong>Focus:</strong> hybrid identity and secure migration planning.</li><li><strong>Controls:</strong> MFA, Conditional Access, RBAC, SSO and least privilege.</li><li><strong>Lifecycle:</strong> joiner-mover-leaver access governance.</li></ul></details><a class="project-link github-direct" href="https://github.com/RicoITSec/cybersecurity-portfolio/blob/main/projects/01-entra-id-migration-identity-strategy.md" target="_blank" rel="noopener noreferrer">GitHub case study ↗</a></article>
+<article class="card"><h3>02 — Access Control Incident Investigation</h3><p>Investigated a former contractor account retaining privileged access after the recorded end date. Recommended automated offboarding, RBAC, privileged access governance, MFA and dual approval for sensitive changes.</p><div class="tags"><span class="tag">Access Control</span><span class="tag">PAM</span><span class="tag">Audit Logs</span><span class="tag">Least Privilege</span></div><details class="case-details"><summary>View investigation details</summary><ul><li><strong>Issue:</strong> privileged access remained active after a contractor end date.</li><li><strong>Evidence:</strong> account status and audit-log review.</li><li><strong>Remediation:</strong> automated offboarding, RBAC, MFA and privileged-access governance.</li></ul></details><a class="project-link github-direct" href="https://github.com/RicoITSec/cybersecurity-portfolio/blob/main/projects/02-access-control-incident-investigation.md" target="_blank" rel="noopener noreferrer">GitHub case study ↗</a></article>
+<article class="card"><h3>03 — Enterprise Security Strategy</h3><p>Created a layered security roadmap for a multi-site organization, covering data protection, anti-phishing, BYOD, MFA, vulnerability management, incident response, backups and centralized IAM.</p><div class="tags"><span class="tag">Risk</span><span class="tag">Data Protection</span><span class="tag">BYOD</span><span class="tag">Incident Response</span></div><details class="case-details"><summary>View strategy details</summary><ul><li><strong>Scope:</strong> multi-site security architecture and governance.</li><li><strong>Priorities:</strong> phishing resistance, MFA, vulnerability management and backups.</li><li><strong>Identity:</strong> centralized IAM as a core control layer.</li></ul></details><a class="project-link github-direct" href="https://github.com/RicoITSec/cybersecurity-portfolio/blob/main/projects/03-enterprise-security-strategy.md" target="_blank" rel="noopener noreferrer">GitHub case study ↗</a></article>
+<article class="card"><h3>04 — Network Segmentation Plan</h3><p>Designed VLAN and firewall segmentation for a 52-device environment, isolating finance, servers, mobile and IoT networks to reduce lateral movement and protect sensitive assets.</p><div class="tags"><span class="tag">VLAN</span><span class="tag">Firewall</span><span class="tag">IoT</span><span class="tag">Zero Trust</span></div><details class="case-details"><summary>View design details</summary><ul><li><strong>Environment:</strong> 52 devices across business and IoT use cases.</li><li><strong>Design:</strong> VLAN separation with firewall-controlled traffic flows.</li><li><strong>Goal:</strong> reduce lateral movement and protect sensitive systems.</li></ul></details><a class="project-link github-direct" href="https://github.com/RicoITSec/cybersecurity-portfolio/blob/main/projects/04-network-segmentation-plan.md" target="_blank" rel="noopener noreferrer">GitHub case study ↗</a></article>
+<article class="card"><h3>05 — Phishing Incident Response & Escalation</h3><p>Performed SOC L1 triage on a phishing alert, validated a malicious password-protected executable, documented evidence using the 5 W's framework and escalated the incident to Level 2.</p><div class="tags"><span class="tag">SOC L1</span><span class="tag">Phishing</span><span class="tag">Triage</span><span class="tag">Playbook</span></div><details class="case-details"><summary>View response details</summary><ul><li><strong>Role:</strong> SOC L1-style alert triage.</li><li><strong>Analysis:</strong> malicious password-protected executable validation.</li><li><strong>Outcome:</strong> evidence documented with the 5 W's and escalated to Level 2.</li></ul></details><a class="project-link github-direct" href="https://github.com/RicoITSec/cybersecurity-portfolio/blob/main/projects/05-phishing-incident-response.md" target="_blank" rel="noopener noreferrer">GitHub case study ↗</a></article>
+<article class="card"><h3>06 — Malware & Threat Intelligence Analysis</h3><p>Used VirusTotal to validate a malicious sample, extracted actionable IOCs and mapped observed behavior to MITRE ATT&CK techniques including process injection, obfuscation and command-and-control activity.</p><div class="tags"><span class="tag">VirusTotal</span><span class="tag">IOC</span><span class="tag">MITRE ATT&CK</span><span class="tag">Threat Intel</span></div><details class="case-details"><summary>View analysis details</summary><ul><li><strong>Tooling:</strong> VirusTotal for malicious-sample validation.</li><li><strong>Output:</strong> actionable indicators of compromise.</li><li><strong>Mapping:</strong> MITRE ATT&amp;CK behaviors including injection, obfuscation and C2.</li></ul></details><a class="project-link github-direct" href="https://github.com/RicoITSec/cybersecurity-portfolio/blob/main/projects/06-malware-threat-intelligence-analysis.md" target="_blank" rel="noopener noreferrer">GitHub case study ↗</a></article>
+<article class="card"><h3>07 — Security Automation & Investigation</h3><p>Used Python for allow-list access-control automation, SQL/MariaDB for security investigations, and Linux permissions tooling to remediate excessive access and validate least-privilege changes.</p><div class="tags"><span class="tag">Python</span><span class="tag">SQL</span><span class="tag">Linux</span><span class="tag">Automation</span></div><details class="case-details"><summary>View technical details</summary><ul><li><strong>Python:</strong> allow-list access-control automation.</li><li><strong>SQL/MariaDB:</strong> security-focused investigation queries.</li><li><strong>Linux:</strong> permission remediation and least-privilege validation.</li></ul></details><a class="project-link github-direct" href="https://github.com/RicoITSec/cybersecurity-portfolio/blob/main/projects/07-security-automation-investigation.md" target="_blank" rel="noopener noreferrer">GitHub case study ↗</a></article>
 </div></section>
 
 <section id="skills"><h2 class="section-title">Core Skills</h2><div class="skills">
@@ -128,7 +128,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var
 <h3>Burger Code — Full-Stack PHP / MySQL</h3>
 <p>Dynamic restaurant application with PHP, PDO/MySQL, category-driven content, a CRUD administration area, prepared statements and image upload handling. Strongest proof of full-stack fundamentals.</p>
 <div class="tags"><span class="tag">PHP</span><span class="tag">MySQL</span><span class="tag">PDO</span><span class="tag">CRUD</span><span class="tag">Bootstrap</span><span class="tag">jQuery</span></div>
-<a class="project-link" href="https://github.com/RicoITSec/Burger-Code" target="_blank" rel="noopener noreferrer">View source repository →</a>
+<a class="project-link github-direct" href="https://github.com/RicoITSec/Burger-Code" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
 </article>
 
 <article class="card">
@@ -136,7 +136,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var
 <h3>OhMyFood — Responsive UI / Sass</h3>
 <p>Multi-page restaurant interface built with semantic HTML and Sass, including responsive layouts, loading animation, restaurant cards and interactive visual states.</p>
 <div class="tags"><span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">Sass</span><span class="tag">Responsive Design</span><span class="tag">Animations</span></div>
-<a class="project-link" href="https://github.com/RicoITSec/OhMyFood" target="_blank" rel="noopener noreferrer">View source repository →</a>
+<a class="project-link github-direct" href="https://github.com/RicoITSec/OhMyFood" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
 </article>
 
 <article class="card">
@@ -144,7 +144,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var
 <h3>La Chouette Agence — SEO / Accessibility / Performance</h3>
 <p>Website optimization project focused on improving an existing agency site through better SEO structure, responsive behavior, accessibility-oriented markup and front-end cleanup.</p>
 <div class="tags"><span class="tag">SEO</span><span class="tag">Accessibility</span><span class="tag">Bootstrap</span><span class="tag">JavaScript</span><span class="tag">jQuery</span></div>
-<a class="project-link" href="https://github.com/RicoITSec/La-Chouette-Agence" target="_blank" rel="noopener noreferrer">View source repository →</a>
+<a class="project-link github-direct" href="https://github.com/RicoITSec/La-Chouette-Agence" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
 </article>
 
 <article class="card">
@@ -152,7 +152,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var
 <h3>Snake — Vanilla JavaScript / Canvas</h3>
 <p>Browser game implemented in JavaScript with Canvas rendering, keyboard controls, collision detection, scoring, apple generation and restart logic.</p>
 <div class="tags"><span class="tag">JavaScript</span><span class="tag">Canvas</span><span class="tag">Game Logic</span><span class="tag">DOM Events</span></div>
-<a class="project-link" href="https://github.com/RicoITSec/Snake" target="_blank" rel="noopener noreferrer">View source repository →</a>
+<a class="project-link github-direct" href="https://github.com/RicoITSec/Snake" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
 </article>
 
 <article class="card">
@@ -160,7 +160,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var
 <h3>Reservia — Responsive Web Integration</h3>
 <p>Travel accommodation interface with responsive cards, filters, navigation, search UI and a dense multi-section layout built from HTML and CSS.</p>
 <div class="tags"><span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">Responsive Design</span><span class="tag">UI Integration</span></div>
-<a class="project-link" href="https://github.com/RicoITSec/Reservia" target="_blank" rel="noopener noreferrer">View source repository →</a>
+<a class="project-link github-direct" href="https://github.com/RicoITSec/Reservia" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
 </article>
 
 <article class="card">
@@ -168,7 +168,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var
 <h3>Developer CV Website</h3>
 <p>Earlier personal portfolio/CV website using HTML, CSS, JavaScript, PHP, Bootstrap and jQuery, with skills, experience, portfolio and contact sections.</p>
 <div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">PHP</span><span class="tag">Bootstrap</span></div>
-<a class="project-link" href="https://github.com/Rico-9/CV" target="_blank" rel="noopener noreferrer">View legacy source repository →</a>
+<a class="project-link github-direct" href="https://github.com/Rico-9/CV" target="_blank" rel="noopener noreferrer">Legacy GitHub ↗</a>
 <span class="legacy-note">Legacy source — migration to RicoITSec pending.</span>
 </article>
 
@@ -177,7 +177,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var
 <h3>Top 5 Actrices — jQuery Interaction</h3>
 <p>Interactive image-based interface using jQuery event handling and animated panel transitions, demonstrating DOM manipulation and UI animation fundamentals.</p>
 <div class="tags"><span class="tag">JavaScript</span><span class="tag">jQuery</span><span class="tag">DOM</span><span class="tag">Animation</span></div>
-<a class="project-link" href="https://github.com/RicoITSec/Top-5-actrices" target="_blank" rel="noopener noreferrer">View source repository →</a>
+<a class="project-link github-direct" href="https://github.com/RicoITSec/Top-5-actrices" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
 </article>
 
 <article class="card">
@@ -185,7 +185,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var
 <h3>Robbie Lens — Photography Portfolio</h3>
 <p>Multi-page photography portfolio with navigation, gallery presentation, project content and a contact form layout.</p>
 <div class="tags"><span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">Forms</span><span class="tag">Portfolio UI</span></div>
-<a class="project-link" href="https://github.com/RicoITSec/Robbie-Lens" target="_blank" rel="noopener noreferrer">View source repository →</a>
+<a class="project-link github-direct" href="https://github.com/RicoITSec/Robbie-Lens" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
 </article>
 
 <article class="card">
@@ -193,7 +193,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var
 <h3>Travel Agency — HTML / CSS Landing Site</h3>
 <p>Foundational travel-agency landing page demonstrating page structure, navigation, section layout and core HTML/CSS integration.</p>
 <div class="tags"><span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">Landing Page</span></div>
-<a class="project-link" href="https://github.com/Rico-9/Travel-agency" target="_blank" rel="noopener noreferrer">View legacy source repository →</a>
+<a class="project-link github-direct" href="https://github.com/Rico-9/Travel-agency" target="_blank" rel="noopener noreferrer">Legacy GitHub ↗</a>
 <span class="legacy-note">Legacy source — migration to RicoITSec pending.</span>
 </article>
 
@@ -202,7 +202,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var
 <h3>Python Fundamentals Exercises</h3>
 <p>Structured Python coursework exercises covering programming fundamentals. Included as a learning archive rather than a production application.</p>
 <div class="tags"><span class="tag">Python</span><span class="tag">Fundamentals</span><span class="tag">Coursework</span></div>
-<a class="project-link" href="https://github.com/Rico-9/7168871-apprenez-les-bases-du-langage-python" target="_blank" rel="noopener noreferrer">View legacy source repository →</a>
+<a class="project-link github-direct" href="https://github.com/Rico-9/7168871-apprenez-les-bases-du-langage-python" target="_blank" rel="noopener noreferrer">Legacy GitHub ↗</a>
 <span class="legacy-note">Legacy source — migration to RicoITSec pending.</span>
 </article>
 
@@ -444,6 +444,8 @@ ja:{language:'言語',themeDark:'ダークテーマに切り替え',themeLight:'
 
 
 Object.assign(TRANSLATIONS,{
+'GitHub case study ↗':{fr:'Étude de cas GitHub ↗',ja:'GitHubケーススタディ ↗'},
+'Legacy GitHub ↗':{fr:'Ancien GitHub ↗',ja:'旧GitHub ↗'},
 'Junior Cybersecurity Analyst':{fr:'Analyste cybersécurité junior',ja:'ジュニア サイバーセキュリティアナリスト'},
 'IAM / Identity Security · SOC L1':{fr:'IAM / Sécurité des identités · SOC L1',ja:'IAM / IDセキュリティ · SOC L1'},
 'Evidence-driven portfolio focused on IAM, identity security and SOC L1. Seven cybersecurity case studies demonstrate Microsoft Entra ID, access control, phishing and malware investigation, network segmentation, Linux, SQL and Python skills.':{fr:'Portfolio fondé sur des preuves concrètes, axé sur l’IAM, la sécurité des identités et le SOC L1. Sept études de cas cybersécurité démontrent des compétences en Microsoft Entra ID, contrôle d’accès, investigation phishing et malware, segmentation réseau, Linux, SQL et Python.',ja:'IAM、IDセキュリティ、SOC L1に焦点を当てた実践重視のポートフォリオです。7件のサイバーセキュリティ・ケーススタディを通じて、Microsoft Entra ID、アクセス制御、フィッシング／マルウェア調査、ネットワーク分離、Linux、SQL、Pythonのスキルを示しています。'},
