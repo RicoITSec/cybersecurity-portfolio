@@ -59,7 +59,7 @@ footer{padding:32px 0 56px;border-top:1px solid var(--line);color:var(--muted)}
 <div class="eyebrow">Cybersecurity & Identity Security Portfolio</div>
 <h1>Junior IAM / Identity Security Analyst<br>Cybersecurity Analyst</h1>
 <p class="lead">Hands-on portfolio across identity and access management, Microsoft Entra ID, incident response, phishing analysis, network segmentation, Python, SQL and Linux. Built to demonstrate practical investigation skills, security design thinking and business-aware controls.</p>
-<div class="cta"><a class="btn primary" href="https://ricoitsec.github.io/CV/" target="_blank" rel="noopener">View Online CV ↗</a><a class="btn" href="#projects">Cybersecurity Projects</a><a class="btn" href="#development">Development Projects</a><a class="btn" href="#skills">Core Skills</a><a class="btn" href="#certifications">Certifications</a><div class="language-switcher" role="group" aria-label="Language"><button class="lang-button" type="button" data-lang="fr" aria-label="Français">FR</button><button class="lang-button" type="button" data-lang="en" aria-label="English">EN</button><button class="lang-button" type="button" data-lang="ja" aria-label="日本語">JP</button></div><button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to light theme" aria-pressed="true"><span class="theme-icon" aria-hidden="true">☀</span><span class="theme-label">Light</span></button></div>
+<div class="cta"><a class="btn primary" href="https://ricoitsec.github.io/CV/" target="_blank" rel="noopener">View Online CV ↗</a><a class="btn" href="#projects">Cybersecurity Projects</a><a class="btn" href="#development">Development Projects</a><a class="btn" href="#skills">Core Skills</a><a class="btn" href="#certifications">Certifications</a><div class="language-switcher" role="group" aria-label="Language"><button class="lang-button" type="button" data-lang="fr" aria-label="Français" title="Français — traduction native">FR</button><button class="lang-button" type="button" data-lang="en" aria-label="English" title="English — native translation">EN</button><button class="lang-button" type="button" data-lang="ja" aria-label="日本語" title="日本語 — ネイティブ品質の翻訳">JP</button></div><button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to light theme" aria-pressed="true"><span class="theme-icon" aria-hidden="true">☀</span><span class="theme-label">Light</span></button></div>
 </div></header>
 <main class="wrap">
 <section id="skills"><h2 class="section-title">Core Skills</h2><div class="skills">
@@ -326,13 +326,91 @@ const TRANSLATIONS={
 'GitHub ↗':{fr:'GitHub ↗',ja:'GitHub ↗'}
 };
 
+const COMPLETE_TRANSLATIONS={
+'Richard | Cybersecurity & Identity Security Portfolio':{fr:'Richard | Portfolio Cybersécurité & Sécurité des identités',ja:'Richard | サイバーセキュリティ & IDセキュリティ・ポートフォリオ'},
+'FR':{fr:'FR',ja:'FR'},
+'EN':{fr:'EN',ja:'EN'},
+'JP':{fr:'JP',ja:'JP'},
+'☀':{fr:'☀',ja:'☀'},
+'☾':{fr:'☾',ja:'☾'},
+'Linux, Bash, SQL, MariaDB, Python, Wireshark, tcpdump, VirusTotal':{fr:'Linux, Bash, SQL, MariaDB, Python, Wireshark, tcpdump, VirusTotal',ja:'Linux、Bash、SQL、MariaDB、Python、Wireshark、tcpdump、VirusTotal'},
+'Entra ID':{fr:'Entra ID',ja:'Entra ID'},
+'Hybrid Identity':{fr:'Identité hybride',ja:'ハイブリッドID'},
+'MFA':{fr:'MFA',ja:'MFA'},
+'RBAC':{fr:'RBAC',ja:'RBAC'},
+'JML':{fr:'JML',ja:'JML'},
+'Access Control':{fr:'Contrôle d’accès',ja:'アクセス制御'},
+'PAM':{fr:'PAM',ja:'PAM'},
+'Audit Logs':{fr:'Journaux d’audit',ja:'監査ログ'},
+'Least Privilege':{fr:'Moindre privilège',ja:'最小権限'},
+'Risk':{fr:'Risque',ja:'リスク'},
+'Data Protection':{fr:'Protection des données',ja:'データ保護'},
+'BYOD':{fr:'BYOD',ja:'BYOD'},
+'Incident Response':{fr:'Réponse aux incidents',ja:'インシデント対応'},
+'VLAN':{fr:'VLAN',ja:'VLAN'},
+'Firewall':{fr:'Pare-feu',ja:'ファイアウォール'},
+'IoT':{fr:'IoT',ja:'IoT'},
+'Zero Trust':{fr:'Zero Trust',ja:'Zero Trust'},
+'SOC L1':{fr:'SOC L1',ja:'SOC L1'},
+'Phishing':{fr:'Phishing',ja:'フィッシング'},
+'Triage':{fr:'Triage',ja:'トリアージ'},
+'Playbook':{fr:'Playbook',ja:'プレイブック'},
+'VirusTotal':{fr:'VirusTotal',ja:'VirusTotal'},
+'IOC':{fr:'IOC',ja:'IOC'},
+'MITRE ATT&CK':{fr:'MITRE ATT&CK',ja:'MITRE ATT&CK'},
+'Threat Intel':{fr:'Threat Intelligence',ja:'脅威インテリジェンス'},
+'Python':{fr:'Python',ja:'Python'},
+'SQL':{fr:'SQL',ja:'SQL'},
+'Linux':{fr:'Linux',ja:'Linux'},
+'Automation':{fr:'Automatisation',ja:'自動化'},
+'Python:':{fr:'Python :',ja:'Python：'},
+'SQL/MariaDB:':{fr:'SQL/MariaDB :',ja:'SQL/MariaDB：'},
+'Linux:':{fr:'Linux :',ja:'Linux：'},
+'PHP':{fr:'PHP',ja:'PHP'},
+'MySQL':{fr:'MySQL',ja:'MySQL'},
+'PDO':{fr:'PDO',ja:'PDO'},
+'CRUD':{fr:'CRUD',ja:'CRUD'},
+'Bootstrap':{fr:'Bootstrap',ja:'Bootstrap'},
+'jQuery':{fr:'jQuery',ja:'jQuery'},
+'HTML5':{fr:'HTML5',ja:'HTML5'},
+'CSS3':{fr:'CSS3',ja:'CSS3'},
+'Sass':{fr:'Sass',ja:'Sass'},
+'Responsive Design':{fr:'Design responsive',ja:'レスポンシブデザイン'},
+'Animations':{fr:'Animations',ja:'アニメーション'},
+'SEO':{fr:'SEO',ja:'SEO'},
+'Accessibility':{fr:'Accessibilité',ja:'アクセシビリティ'},
+'JavaScript':{fr:'JavaScript',ja:'JavaScript'},
+'Canvas':{fr:'Canvas',ja:'Canvas'},
+'Game Logic':{fr:'Logique de jeu',ja:'ゲームロジック'},
+'DOM Events':{fr:'Événements DOM',ja:'DOMイベント'},
+'UI Integration':{fr:'Intégration UI',ja:'UI実装'},
+'HTML':{fr:'HTML',ja:'HTML'},
+'CSS':{fr:'CSS',ja:'CSS'},
+'DOM':{fr:'DOM',ja:'DOM'},
+'Animation':{fr:'Animation',ja:'アニメーション'},
+'Forms':{fr:'Formulaires',ja:'フォーム'},
+'Portfolio UI':{fr:'Interface portfolio',ja:'ポートフォリオUI'},
+'Landing Page':{fr:'Landing page',ja:'ランディングページ'},
+'Fundamentals':{fr:'Fondamentaux',ja:'基礎'},
+'Coursework':{fr:'Travaux de cours',ja:'学習課題'},
+'Google Cybersecurity Professional Certificate':{fr:'Google Cybersecurity Professional Certificate',ja:'Google Cybersecurity Professional Certificate'},
+'Microsoft Cybersecurity Analyst Professional Certificate':{fr:'Microsoft Cybersecurity Analyst Professional Certificate',ja:'Microsoft Cybersecurity Analyst Professional Certificate'}
+};
+Object.assign(TRANSLATIONS,COMPLETE_TRANSLATIONS);
+
+const ACCESSIBILITY_I18N={
+en:{language:'Language',themeDark:'Switch to dark theme',themeLight:'Switch to light theme'},
+fr:{language:'Langue',themeDark:'Passer au thème sombre',themeLight:'Passer au thème clair'},
+ja:{language:'言語',themeDark:'ダークテーマに切り替え',themeLight:'ライトテーマに切り替え'}
+};
+
 const META={
 en:{title:'Richard | Cybersecurity & Identity Security Portfolio',description:'Junior IAM / Identity Security Analyst and Cybersecurity Analyst portfolio featuring Microsoft Entra ID, SOC, incident response, Python, SQL, Linux and web development projects.'},
 fr:{title:'Richard | Portfolio Cybersécurité & Sécurité des identités',description:'Portfolio junior IAM, sécurité des identités et cybersécurité avec Microsoft Entra ID, SOC, réponse aux incidents, Python, SQL, Linux et projets de développement web.'},
 ja:{title:'Richard | サイバーセキュリティ & IDセキュリティ・ポートフォリオ',description:'Microsoft Entra ID、SOC、インシデント対応、Python、SQL、Linux、Web開発プロジェクトを掲載するジュニアIAM・IDセキュリティ・サイバーセキュリティのポートフォリオ。'}
 };
 
-let currentLanguage=localStorage.getItem(LANGUAGE_KEY)||'en';
+let currentLanguage=localStorage.getItem(LANGUAGE_KEY)||(navigator.language.toLowerCase().startsWith('fr')?'fr':navigator.language.toLowerCase().startsWith('ja')?'ja':'en');
 const originalText=new WeakMap();
 
 function t(key){
@@ -374,8 +452,14 @@ function applyLanguage(language){
   if(meta){
     document.title=meta.title;
     const description=document.querySelector('meta[name="description"]');
+    const ogTitle=document.querySelector('meta[property="og:title"]');
+    const ogDescription=document.querySelector('meta[property="og:description"]');
     if(description) description.setAttribute('content',meta.description);
+    if(ogTitle) ogTitle.setAttribute('content',meta.title);
+    if(ogDescription) ogDescription.setAttribute('content',meta.description);
   }
+  const a11y=ACCESSIBILITY_I18N[language]||ACCESSIBILITY_I18N.en;
+  document.querySelector('.language-switcher')?.setAttribute('aria-label',a11y.language);
   applyTheme(document.documentElement.dataset.theme||'dark');
 }
 
@@ -385,10 +469,8 @@ function applyTheme(theme){
   const toggle=document.getElementById('theme-toggle');
   if(toggle){
     toggle.setAttribute('aria-pressed',String(isDark));
-    toggle.setAttribute('aria-label',
-      currentLanguage==='fr'?(isDark?'Passer au thème clair':'Passer au thème sombre'):
-      currentLanguage==='ja'?(isDark?'ライトテーマに切り替え':'ダークテーマに切り替え'):
-      (isDark?'Switch to light theme':'Switch to dark theme'));
+    const a11y=ACCESSIBILITY_I18N[currentLanguage]||ACCESSIBILITY_I18N.en;
+    toggle.setAttribute('aria-label',isDark?a11y.themeLight:a11y.themeDark);
     const icon=toggle.querySelector('.theme-icon');
     const label=toggle.querySelector('.theme-label');
     if(icon) icon.textContent=isDark?'☀':'☾';
