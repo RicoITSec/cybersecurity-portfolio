@@ -46,7 +46,7 @@ html[data-theme="light"]{color-scheme:light;--bg:#f5f5dc;--bg2:#f0efd8;--bg3:#ec
 h1{font-size:clamp(2.3rem,6vw,4.7rem);line-height:1.03;margin:.4rem 0 1rem}.lead{font-size:1.15rem;color:var(--muted);max-width:850px}
 .cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px;align-items:center}.btn{display:inline-flex;align-items:center;justify-content:center;padding:11px 16px;border-radius:10px;text-decoration:none;font-weight:750;border:1px solid var(--line);background:var(--panel);color:var(--text)}.btn.primary{background:var(--accent);color:#06111b;border-color:var(--accent)}
 section{padding:48px 0}.section-title{font-size:1.8rem;margin:0 0 20px}.grid{display:grid;grid-template-columns:repeat(12,1fr);gap:18px}
-.card{grid-column:span 6;background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:22px}.card h3{margin:0 0 8px}.card p{margin:0;color:var(--muted)}.project-link{display:inline-block;margin-top:14px;color:var(--accent);font-weight:750;text-decoration:none}.project-link:hover{text-decoration:underline}.github-direct{display:inline-flex;align-items:center;margin-top:16px;padding:8px 11px;border:1px solid var(--line);border-radius:9px;background:var(--soft);text-decoration:none}.github-direct:hover{text-decoration:none;transform:translateY(-1px);border-color:var(--accent)}.section-intro{color:var(--muted);max-width:860px;margin:-8px 0 22px}.rank{color:var(--accent);font-weight:800;font-size:.82rem;letter-spacing:.06em;text-transform:uppercase}
+.card{grid-column:span 6;background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:22px}.card h3{margin:0 0 8px}.card p{margin:0;color:var(--muted)}.project-link{display:inline-block;margin-top:14px;color:var(--accent);font-weight:750;text-decoration:none}.project-link:hover{text-decoration:underline}.project-actions-inline{display:flex;flex-wrap:wrap;gap:9px;margin-top:16px}.github-direct,.live-direct{display:inline-flex;align-items:center;padding:8px 11px;border:1px solid var(--line);border-radius:9px;background:var(--soft);text-decoration:none;font-weight:750}.github-direct:hover,.live-direct:hover{text-decoration:none;transform:translateY(-1px);border-color:var(--accent)}.live-direct{background:var(--accent);color:#06111b;border-color:var(--accent)}.section-intro{color:var(--muted);max-width:860px;margin:-8px 0 22px}.rank{color:var(--accent);font-weight:800;font-size:.82rem;letter-spacing:.06em;text-transform:uppercase}
 .tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}.tag{font-size:.79rem;padding:5px 9px;border-radius:999px;background:var(--soft);color:var(--tag-text);border:1px solid var(--line)}
 .skills{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.skill{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px}.skill b{display:block;margin-bottom:6px}.skill span{color:var(--muted);font-size:.92rem}
 .snapshot-section{padding-top:34px;padding-bottom:18px}
@@ -128,7 +128,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var
 <h3>Burger Code — Full-Stack PHP / MySQL</h3>
 <p>Dynamic restaurant application with PHP, PDO/MySQL, category-driven content, a CRUD administration area, prepared statements and image upload handling. Strongest proof of full-stack fundamentals.</p>
 <div class="tags"><span class="tag">PHP</span><span class="tag">MySQL</span><span class="tag">PDO</span><span class="tag">CRUD</span><span class="tag">Bootstrap</span><span class="tag">jQuery</span></div>
-<a class="project-link github-direct" href="https://github.com/RicoITSec/Burger-Code" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+<div class="project-actions-inline"><a class="project-link github-direct" href="https://github.com/RicoITSec/Burger-Code" target="_blank" rel="noopener noreferrer">GitHub source ↗</a></div>
 </article>
 
 <article class="card">
@@ -136,7 +136,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var
 <h3>OhMyFood — Responsive UI / Sass</h3>
 <p>Multi-page restaurant interface built with semantic HTML and Sass, including responsive layouts, loading animation, restaurant cards and interactive visual states.</p>
 <div class="tags"><span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">Sass</span><span class="tag">Responsive Design</span><span class="tag">Animations</span></div>
-<a class="project-link github-direct" href="https://github.com/RicoITSec/OhMyFood" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+<div class="project-actions-inline"><a class="project-link live-direct" href="https://rico-9.github.io/P3/" target="_blank" rel="noopener noreferrer">Live project ↗</a><a class="project-link github-direct" href="https://github.com/RicoITSec/OhMyFood" target="_blank" rel="noopener noreferrer">GitHub source ↗</a></div>
 </article>
 
 <article class="card">
@@ -144,7 +144,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var
 <h3>La Chouette Agence — SEO / Accessibility / Performance</h3>
 <p>Website optimization project focused on improving an existing agency site through better SEO structure, responsive behavior, accessibility-oriented markup and front-end cleanup.</p>
 <div class="tags"><span class="tag">SEO</span><span class="tag">Accessibility</span><span class="tag">Bootstrap</span><span class="tag">JavaScript</span><span class="tag">jQuery</span></div>
-<a class="project-link github-direct" href="https://github.com/RicoITSec/La-Chouette-Agence" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+<div class="project-actions-inline"><a class="project-link live-direct" href="https://rico-9.github.io/P4/" target="_blank" rel="noopener noreferrer">Live project ↗</a><a class="project-link github-direct" href="https://github.com/RicoITSec/La-Chouette-Agence" target="_blank" rel="noopener noreferrer">GitHub source ↗</a></div>
 </article>
 
 <article class="card">
@@ -152,7 +152,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var
 <h3>Snake — Vanilla JavaScript / Canvas</h3>
 <p>Browser game implemented in JavaScript with Canvas rendering, keyboard controls, collision detection, scoring, apple generation and restart logic.</p>
 <div class="tags"><span class="tag">JavaScript</span><span class="tag">Canvas</span><span class="tag">Game Logic</span><span class="tag">DOM Events</span></div>
-<a class="project-link github-direct" href="https://github.com/RicoITSec/Snake" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+<div class="project-actions-inline"><a class="project-link live-direct" href="https://rico-9.github.io/Snake/" target="_blank" rel="noopener noreferrer">Live project ↗</a><a class="project-link github-direct" href="https://github.com/RicoITSec/Snake" target="_blank" rel="noopener noreferrer">GitHub source ↗</a></div>
 </article>
 
 <article class="card">
@@ -160,7 +160,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var
 <h3>Reservia — Responsive Web Integration</h3>
 <p>Travel accommodation interface with responsive cards, filters, navigation, search UI and a dense multi-section layout built from HTML and CSS.</p>
 <div class="tags"><span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">Responsive Design</span><span class="tag">UI Integration</span></div>
-<a class="project-link github-direct" href="https://github.com/RicoITSec/Reservia" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+<div class="project-actions-inline"><a class="project-link live-direct" href="https://rico-9.github.io/OCR_P2/" target="_blank" rel="noopener noreferrer">Live project ↗</a><a class="project-link github-direct" href="https://github.com/RicoITSec/Reservia" target="_blank" rel="noopener noreferrer">GitHub source ↗</a></div>
 </article>
 
 <article class="card">
@@ -168,7 +168,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var
 <h3>Developer CV Website</h3>
 <p>Earlier personal portfolio/CV website using HTML, CSS, JavaScript, PHP, Bootstrap and jQuery, with skills, experience, portfolio and contact sections.</p>
 <div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">PHP</span><span class="tag">Bootstrap</span></div>
-<a class="project-link github-direct" href="https://github.com/Rico-9/CV" target="_blank" rel="noopener noreferrer">Legacy GitHub ↗</a>
+<div class="project-actions-inline"><a class="project-link live-direct" href="https://rico-9.github.io/CV/" target="_blank" rel="noopener noreferrer">Live project ↗</a><a class="project-link github-direct" href="https://github.com/Rico-9/CV" target="_blank" rel="noopener noreferrer">GitHub source ↗</a></div>
 <span class="legacy-note">Legacy source — migration to RicoITSec pending.</span>
 </article>
 
@@ -177,7 +177,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var
 <h3>Top 5 Actrices — jQuery Interaction</h3>
 <p>Interactive image-based interface using jQuery event handling and animated panel transitions, demonstrating DOM manipulation and UI animation fundamentals.</p>
 <div class="tags"><span class="tag">JavaScript</span><span class="tag">jQuery</span><span class="tag">DOM</span><span class="tag">Animation</span></div>
-<a class="project-link github-direct" href="https://github.com/RicoITSec/Top-5-actrices" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+<div class="project-actions-inline"><a class="project-link live-direct" href="https://rico-9.github.io/Top-5-actrices/" target="_blank" rel="noopener noreferrer">Live project ↗</a><a class="project-link github-direct" href="https://github.com/RicoITSec/Top-5-actrices" target="_blank" rel="noopener noreferrer">GitHub source ↗</a></div>
 </article>
 
 <article class="card">
@@ -185,7 +185,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var
 <h3>Robbie Lens — Photography Portfolio</h3>
 <p>Multi-page photography portfolio with navigation, gallery presentation, project content and a contact form layout.</p>
 <div class="tags"><span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">Forms</span><span class="tag">Portfolio UI</span></div>
-<a class="project-link github-direct" href="https://github.com/RicoITSec/Robbie-Lens" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+<div class="project-actions-inline"><a class="project-link live-direct" href="https://rico-9.github.io/Robbie-Lens/" target="_blank" rel="noopener noreferrer">Live project ↗</a><a class="project-link github-direct" href="https://github.com/RicoITSec/Robbie-Lens" target="_blank" rel="noopener noreferrer">GitHub source ↗</a></div>
 </article>
 
 <article class="card">
@@ -193,7 +193,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var
 <h3>Travel Agency — HTML / CSS Landing Site</h3>
 <p>Foundational travel-agency landing page demonstrating page structure, navigation, section layout and core HTML/CSS integration.</p>
 <div class="tags"><span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">Landing Page</span></div>
-<a class="project-link github-direct" href="https://github.com/Rico-9/Travel-agency" target="_blank" rel="noopener noreferrer">Legacy GitHub ↗</a>
+<div class="project-actions-inline"><a class="project-link live-direct" href="https://rico-9.github.io/Travel-agency/" target="_blank" rel="noopener noreferrer">Live project ↗</a><a class="project-link github-direct" href="https://github.com/Rico-9/Travel-agency" target="_blank" rel="noopener noreferrer">GitHub source ↗</a></div>
 <span class="legacy-note">Legacy source — migration to RicoITSec pending.</span>
 </article>
 
@@ -202,7 +202,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var
 <h3>Python Fundamentals Exercises</h3>
 <p>Structured Python coursework exercises covering programming fundamentals. Included as a learning archive rather than a production application.</p>
 <div class="tags"><span class="tag">Python</span><span class="tag">Fundamentals</span><span class="tag">Coursework</span></div>
-<a class="project-link github-direct" href="https://github.com/Rico-9/7168871-apprenez-les-bases-du-langage-python" target="_blank" rel="noopener noreferrer">Legacy GitHub ↗</a>
+<div class="project-actions-inline"><a class="project-link github-direct" href="https://github.com/Rico-9/7168871-apprenez-les-bases-du-langage-python" target="_blank" rel="noopener noreferrer">GitHub source ↗</a></div>
 <span class="legacy-note">Legacy source — migration to RicoITSec pending.</span>
 </article>
 
@@ -361,7 +361,9 @@ const TRANSLATIONS={
 'Basic':{fr:'Notions',ja:'基礎'},
 'Cybersecurity, Identity Security & Development Portfolio — Updated October 2026':{fr:'Portfolio Cybersécurité, Sécurité des identités & Développement — Mis à jour en octobre 2026',ja:'サイバーセキュリティ・IDセキュリティ・開発ポートフォリオ — 2026年10月更新'},
 'Online CV ↗':{fr:'CV en ligne ↗',ja:'オンラインCV ↗'},
-'GitHub ↗':{fr:'GitHub ↗',ja:'GitHub ↗'}
+'GitHub ↗':{fr:'GitHub ↗',ja:'GitHub ↗'},
+'Live project ↗':{fr:'Voir le projet ↗',ja:'ライブプロジェクト ↗'},
+'GitHub source ↗':{fr:'Code source GitHub ↗',ja:'GitHubソース ↗'}
 };
 
 const COMPLETE_TRANSLATIONS={
