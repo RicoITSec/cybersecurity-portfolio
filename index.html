@@ -13,7 +13,7 @@
 <meta property="og:description" content="Evidence-driven junior cybersecurity portfolio with IAM, identity security, SOC L1, Microsoft Entra ID, incident response, Linux, SQL, Python and network security case studies.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://ricoitsec.github.io/cybersecurity-portfolio/">
-<meta name="theme-color" content="#08111f" id="theme-color-meta">
+<meta name="theme-color" content="#242424" id="theme-color-meta">
 <script type="application/ld+json">
 {
   "@context":"https://schema.org",
@@ -30,13 +30,13 @@
 </script>
 <script>
 (() => {
-  const saved = localStorage.getItem('rico-theme');
-  const theme = saved || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+  const saved = localStorage.getItem('rico-theme-gray-v1');
+  const theme = saved || 'dark';
   document.documentElement.dataset.theme = theme;
 })();
 </script>
 <style>
-:root{color-scheme:dark;--bg:#08111f;--bg2:#0b1220;--bg3:#0d1425;--panel:#111a2f;--soft:#182540;--text:#f4f7fb;--muted:#aab6ce;--accent:#66d9ef;--line:#29385a;--tag-text:#dce7ff;--header-panel:#111a2f}
+:root{color-scheme:dark;--bg:#242424;--bg2:#242424;--bg3:#242424;--panel:#2e2e2e;--soft:#353535;--text:#f4f7fb;--muted:#c2c2c2;--accent:#66d9ef;--line:#4a4a4a;--tag-text:#ededed;--header-panel:#2e2e2e}
 html[data-theme="light"]{color-scheme:light;--bg:#f5f5dc;--bg2:#f0efd8;--bg3:#ecebd0;--panel:#fffef0;--soft:#efeed3;--text:#172033;--muted:#586273;--accent:#176b87;--line:rgba(23,32,51,.14);--tag-text:#405064;--header-panel:#fffef0}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,system-ui,Segoe UI,Arial,sans-serif;background:linear-gradient(180deg,var(--bg),var(--bg2) 40%,var(--bg3));color:var(--text);line-height:1.6}
 .wrap{max-width:1120px;margin:auto;padding:0 24px}header{padding:28px 0 46px;border-bottom:1px solid var(--line)}
@@ -246,7 +246,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var
 <div class="link-row"><a class="project-link" href="https://ricoitsec.github.io/CV/" target="_blank" rel="noopener">Online CV ↗</a><a class="project-link" href="https://github.com/RicoITSec" target="_blank" rel="noopener">GitHub ↗</a></div>
 </div></footer>
 <script>
-const THEME_KEY='rico-theme';
+const THEME_KEY='rico-theme-gray-v1';
 const LANGUAGE_KEY='rico-lang';
 
 const TRANSLATIONS={
@@ -678,7 +678,7 @@ function applyTheme(theme){
     if(label) label.textContent=isDark?t('Light'):t('Dark');
   }
   const meta=document.getElementById('theme-color-meta');
-  if(meta) meta.setAttribute('content',isDark?'#08111f':'#f5f5dc');
+  if(meta) meta.setAttribute('content',isDark?'#242424':'#f5f5dc');
 }
 
 document.addEventListener('DOMContentLoaded',()=>{
