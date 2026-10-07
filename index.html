@@ -3,16 +3,31 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Richard | Cybersecurity & Identity Security Portfolio</title>
-<meta name="description" content="Junior IAM / Identity Security Analyst and Cybersecurity Analyst portfolio featuring Microsoft Entra ID, SOC, incident response, Python, SQL, Linux and web development projects.">
+<title>Richard | Junior Cybersecurity Analyst · IAM / Identity Security · SOC L1 Portfolio</title>
+<meta name="description" content="Junior Cybersecurity Analyst portfolio focused on IAM, identity security and SOC L1, with hands-on Microsoft Entra ID, incident response, Linux, SQL, Python and network security case studies.">
 <meta name="author" content="Richard">
 <meta name="robots" content="index,follow">
+<meta name="keywords" content="Junior Cybersecurity Analyst, IAM Analyst, Identity Security, SOC L1, Microsoft Entra ID, Incident Response, Linux, SQL, Python, Network Security, Zero Trust">
 <link rel="canonical" href="https://ricoitsec.github.io/cybersecurity-portfolio/">
-<meta property="og:title" content="Richard | Cybersecurity & Identity Security Portfolio">
-<meta property="og:description" content="Hands-on junior cybersecurity, IAM and SOC portfolio with identity security, incident response, Linux, SQL, Python and web-development projects.">
+<meta property="og:title" content="Richard | Junior Cybersecurity Analyst · IAM / Identity Security · SOC L1">
+<meta property="og:description" content="Evidence-driven junior cybersecurity portfolio with IAM, identity security, SOC L1, Microsoft Entra ID, incident response, Linux, SQL, Python and network security case studies.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://ricoitsec.github.io/cybersecurity-portfolio/">
 <meta name="theme-color" content="#08111f" id="theme-color-meta">
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"ProfilePage",
+  "mainEntity":{
+    "@type":"Person",
+    "name":"Richard",
+    "jobTitle":"Junior Cybersecurity Analyst / IAM / Identity Security / SOC L1",
+    "url":"https://ricoitsec.github.io/CV/",
+    "sameAs":["https://github.com/RicoITSec"],
+    "knowsAbout":["Cybersecurity","Identity and Access Management","Microsoft Entra ID","Incident Response","Linux","SQL","Python","Network Security","Zero Trust"]
+  }
+}
+</script>
 <script>
 (() => {
   const saved = localStorage.getItem('rico-theme');
@@ -34,6 +49,11 @@ section{padding:48px 0}.section-title{font-size:1.8rem;margin:0 0 20px}.grid{dis
 .card{grid-column:span 6;background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:22px}.card h3{margin:0 0 8px}.card p{margin:0;color:var(--muted)}.project-link{display:inline-block;margin-top:14px;color:var(--accent);font-weight:750;text-decoration:none}.project-link:hover{text-decoration:underline}.section-intro{color:var(--muted);max-width:860px;margin:-8px 0 22px}.rank{color:var(--accent);font-weight:800;font-size:.82rem;letter-spacing:.06em;text-transform:uppercase}
 .tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}.tag{font-size:.79rem;padding:5px 9px;border-radius:999px;background:var(--soft);color:var(--tag-text);border:1px solid var(--line)}
 .skills{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.skill{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px}.skill b{display:block;margin-bottom:6px}.skill span{color:var(--muted);font-size:.92rem}
+.snapshot-section{padding-top:34px;padding-bottom:18px}
+.snapshot-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.snapshot-item{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px}
+.snapshot-item b,.snapshot-item span{display:block}
+.snapshot-item span{margin-top:5px;color:var(--muted);font-size:.9rem}
 .timeline{display:grid;gap:12px}.row{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px}.row strong{display:block}.row span{color:var(--muted)}
 footer{padding:32px 0 56px;border-top:1px solid var(--line);color:var(--muted)}
 .theme-toggle{display:inline-flex;align-items:center;gap:8px;padding:11px 14px;border-radius:10px;border:1px solid var(--line);background:var(--panel);color:var(--text);font:inherit;font-weight:750;cursor:pointer}
@@ -52,27 +72,36 @@ footer{padding:32px 0 56px;border-top:1px solid var(--line);color:var(--muted)}
 .case-details li+li{margin-top:6px}
 .link-row{display:flex;flex-wrap:wrap;gap:14px;margin-top:14px}
 .legacy-note{display:inline-block;margin-top:10px;color:var(--muted);font-size:.82rem;font-weight:650}
+.skip-link{position:absolute;left:16px;top:-80px;z-index:999;background:var(--panel);color:var(--text);padding:10px 14px;border:1px solid var(--line);border-radius:8px;text-decoration:none}
+.skip-link:focus{top:16px}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.btn,.theme-toggle,.lang-button{transition:transform .18s ease,border-color .18s ease,background .18s ease}
+.btn:hover{transform:translateY(-1px)}
 @media(max-width:700px){.header-top{align-items:flex-start;gap:14px;margin-bottom:28px}.header-controls{margin-left:auto}.theme-label{display:none}.theme-toggle{width:44px;padding:11px 0;justify-content:center}}
 @media(max-width:520px){header{padding-top:20px}.header-top{flex-wrap:wrap}.header-controls{width:100%;justify-content:flex-end}.lang-button{min-width:31px;padding:0 6px}}
-@media(max-width:800px){.card{grid-column:span 12}.skills{grid-template-columns:1fr 1fr}}@media(max-width:520px){.skills{grid-template-columns:1fr}}
+@media(max-width:900px){.snapshot-grid{grid-template-columns:1fr 1fr}}@media(max-width:800px){.card{grid-column:span 12}.skills{grid-template-columns:1fr 1fr}}@media(max-width:520px){.skills,.snapshot-grid{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
 </style>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to content</a>
 <header><div class="wrap">
 <div class="header-top"><div class="eyebrow">Cybersecurity & Identity Security Portfolio</div><div class="header-controls"><div class="language-switcher" role="group" aria-label="Language"><button class="lang-button" type="button" data-lang="fr" aria-label="Français" title="Français — traduction native">FR</button><button class="lang-button" type="button" data-lang="en" aria-label="English" title="English — native translation">EN</button><button class="lang-button" type="button" data-lang="ja" aria-label="日本語" title="日本語 — ネイティブ品質の翻訳">JP</button></div><button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to light theme" aria-pressed="true"><span class="theme-icon" aria-hidden="true">☀</span><span class="theme-label">Light</span></button></div></div>
-<h1>Junior IAM / Identity Security Analyst<br>Cybersecurity Analyst</h1>
-<p class="lead">Hands-on portfolio across identity and access management, Microsoft Entra ID, incident response, phishing analysis, network segmentation, Python, SQL and Linux. Built to demonstrate practical investigation skills, security design thinking and business-aware controls.</p>
-<div class="cta"><a class="btn primary" href="https://ricoitsec.github.io/CV/" target="_blank" rel="noopener">View Online CV ↗</a><a class="btn" href="#projects">Cybersecurity Projects</a><a class="btn" href="#development">Development Projects</a><a class="btn" href="#skills">Core Skills</a><a class="btn" href="#certifications">Certifications</a></div>
+<h1>Junior Cybersecurity Analyst<br>IAM / Identity Security · SOC L1</h1>
+<p class="lead">Evidence-driven portfolio focused on IAM, identity security and SOC L1. Seven cybersecurity case studies demonstrate Microsoft Entra ID, access control, phishing and malware investigation, network segmentation, Linux, SQL and Python skills.</p>
+<div class="cta"><a class="btn primary" href="https://ricoitsec.github.io/CV/" target="_blank" rel="noopener">View Online CV ↗</a><a class="btn" href="#projects">Cybersecurity Projects</a><a class="btn" href="#skills">Core Skills</a><a class="btn" href="https://github.com/RicoITSec" target="_blank" rel="noopener">GitHub ↗</a></div>
 </div></header>
-<main class="wrap">
-<section id="skills"><h2 class="section-title">Core Skills</h2><div class="skills">
-<div class="skill"><b>Identity & Access</b><span>Microsoft Entra ID, IAM, RBAC, MFA, Conditional Access, SSO, JML, least privilege</span></div>
-<div class="skill"><b>Security Operations</b><span>Incident response, alert triage, phishing analysis, escalation, IOC analysis, threat intelligence</span></div>
-<div class="skill"><b>Technical</b><span>Linux, Bash, SQL, MariaDB, Python, Wireshark, tcpdump, VirusTotal</span></div>
-<div class="skill"><b>Architecture & Governance</b><span>Network segmentation, firewall policy, Zero Trust, NIST-based risk, backups, BYOD, vulnerability management</span></div>
-</div></section>
-
-<section id="projects"><h2 class="section-title">Selected Projects</h2><div class="grid">
+<main class="wrap" id="main">
+<section id="snapshot" class="snapshot-section">
+<h2 class="section-title">Recruiter Snapshot</h2>
+<div class="snapshot-grid">
+<div class="snapshot-item"><b>Primary target</b><span>Junior Cybersecurity · IAM · SOC L1</span></div>
+<div class="snapshot-item"><b>Credential</b><span>Google Cybersecurity · Completed</span></div>
+<div class="snapshot-item"><b>Current learning</b><span>Microsoft Cybersecurity Analyst · In progress</span></div>
+<div class="snapshot-item"><b>Hands-on evidence</b><span>7 security case studies · 10 development projects</span></div>
+</div>
+</section>
+<section id="projects"><h2 class="section-title">Cybersecurity Case Studies</h2><p class="section-intro">Seven hands-on case studies selected for IAM, SOC L1 and junior cybersecurity recruiting. Each project highlights the problem, investigation or design approach, and the security controls applied.</p><div class="grid">
 <article class="card"><h3>01 — Microsoft Entra ID Migration & Identity Strategy</h3><p>Hybrid identity case study covering Microsoft Entra Connect / Cloud Sync, password hash synchronization, SSO, enterprise applications, MFA, Conditional Access, RBAC, least privilege and joiner-mover-leaver lifecycle controls.</p><div class="tags"><span class="tag">Entra ID</span><span class="tag">Hybrid Identity</span><span class="tag">MFA</span><span class="tag">RBAC</span><span class="tag">JML</span></div><details class="case-details"><summary>View case study details</summary><ul><li><strong>Focus:</strong> hybrid identity and secure migration planning.</li><li><strong>Controls:</strong> MFA, Conditional Access, RBAC, SSO and least privilege.</li><li><strong>Lifecycle:</strong> joiner-mover-leaver access governance.</li></ul></details></article>
 <article class="card"><h3>02 — Access Control Incident Investigation</h3><p>Investigated a former contractor account retaining privileged access after the recorded end date. Recommended automated offboarding, RBAC, privileged access governance, MFA and dual approval for sensitive changes.</p><div class="tags"><span class="tag">Access Control</span><span class="tag">PAM</span><span class="tag">Audit Logs</span><span class="tag">Least Privilege</span></div><details class="case-details"><summary>View investigation details</summary><ul><li><strong>Issue:</strong> privileged access remained active after a contractor end date.</li><li><strong>Evidence:</strong> account status and audit-log review.</li><li><strong>Remediation:</strong> automated offboarding, RBAC, MFA and privileged-access governance.</li></ul></details></article>
 <article class="card"><h3>03 — Enterprise Security Strategy</h3><p>Created a layered security roadmap for a multi-site organization, covering data protection, anti-phishing, BYOD, MFA, vulnerability management, incident response, backups and centralized IAM.</p><div class="tags"><span class="tag">Risk</span><span class="tag">Data Protection</span><span class="tag">BYOD</span><span class="tag">Incident Response</span></div><details class="case-details"><summary>View strategy details</summary><ul><li><strong>Scope:</strong> multi-site security architecture and governance.</li><li><strong>Priorities:</strong> phishing resistance, MFA, vulnerability management and backups.</li><li><strong>Identity:</strong> centralized IAM as a core control layer.</li></ul></details></article>
@@ -82,6 +111,12 @@ footer{padding:32px 0 56px;border-top:1px solid var(--line);color:var(--muted)}
 <article class="card"><h3>07 — Security Automation & Investigation</h3><p>Used Python for allow-list access-control automation, SQL/MariaDB for security investigations, and Linux permissions tooling to remediate excessive access and validate least-privilege changes.</p><div class="tags"><span class="tag">Python</span><span class="tag">SQL</span><span class="tag">Linux</span><span class="tag">Automation</span></div><details class="case-details"><summary>View technical details</summary><ul><li><strong>Python:</strong> allow-list access-control automation.</li><li><strong>SQL/MariaDB:</strong> security-focused investigation queries.</li><li><strong>Linux:</strong> permission remediation and least-privilege validation.</li></ul></details></article>
 </div></section>
 
+<section id="skills"><h2 class="section-title">Core Skills</h2><div class="skills">
+<div class="skill"><b>Identity & Access</b><span>Microsoft Entra ID, IAM, RBAC, MFA, Conditional Access, SSO, JML, least privilege</span></div>
+<div class="skill"><b>Security Operations</b><span>Incident response, alert triage, phishing analysis, escalation, IOC analysis, threat intelligence</span></div>
+<div class="skill"><b>Technical</b><span>Linux, Bash, SQL, MariaDB, Python, Wireshark, tcpdump, VirusTotal</span></div>
+<div class="skill"><b>Architecture & Governance</b><span>Network segmentation, firewall policy, Zero Trust, NIST-based risk, backups, BYOD, vulnerability management</span></div>
+</div></section>
 
 <section id="development">
 <h2 class="section-title">Web Development Projects</h2>
@@ -89,7 +124,7 @@ footer{padding:32px 0 56px;border-top:1px solid var(--line);color:var(--muted)}
 <div class="grid">
 
 <article class="card">
-<div class="rank">01 — Highest credibility</div>
+<div class="rank">01 — Full-stack application</div>
 <h3>Burger Code — Full-Stack PHP / MySQL</h3>
 <p>Dynamic restaurant application with PHP, PDO/MySQL, category-driven content, a CRUD administration area, prepared statements and image upload handling. Strongest proof of full-stack fundamentals.</p>
 <div class="tags"><span class="tag">PHP</span><span class="tag">MySQL</span><span class="tag">PDO</span><span class="tag">CRUD</span><span class="tag">Bootstrap</span><span class="tag">jQuery</span></div>
@@ -97,7 +132,7 @@ footer{padding:32px 0 56px;border-top:1px solid var(--line);color:var(--muted)}
 </article>
 
 <article class="card">
-<div class="rank">02 — Strong front-end project</div>
+<div class="rank">02 — Front-end application</div>
 <h3>OhMyFood — Responsive UI / Sass</h3>
 <p>Multi-page restaurant interface built with semantic HTML and Sass, including responsive layouts, loading animation, restaurant cards and interactive visual states.</p>
 <div class="tags"><span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">Sass</span><span class="tag">Responsive Design</span><span class="tag">Animations</span></div>
@@ -407,10 +442,31 @@ fr:{language:'Langue',themeDark:'Passer au thème sombre',themeLight:'Passer au 
 ja:{language:'言語',themeDark:'ダークテーマに切り替え',themeLight:'ライトテーマに切り替え'}
 };
 
+
+Object.assign(TRANSLATIONS,{
+'Junior Cybersecurity Analyst':{fr:'Analyste cybersécurité junior',ja:'ジュニア サイバーセキュリティアナリスト'},
+'IAM / Identity Security · SOC L1':{fr:'IAM / Sécurité des identités · SOC L1',ja:'IAM / IDセキュリティ · SOC L1'},
+'Evidence-driven portfolio focused on IAM, identity security and SOC L1. Seven cybersecurity case studies demonstrate Microsoft Entra ID, access control, phishing and malware investigation, network segmentation, Linux, SQL and Python skills.':{fr:'Portfolio fondé sur des preuves concrètes, axé sur l’IAM, la sécurité des identités et le SOC L1. Sept études de cas cybersécurité démontrent des compétences en Microsoft Entra ID, contrôle d’accès, investigation phishing et malware, segmentation réseau, Linux, SQL et Python.',ja:'IAM、IDセキュリティ、SOC L1に焦点を当てた実践重視のポートフォリオです。7件のサイバーセキュリティ・ケーススタディを通じて、Microsoft Entra ID、アクセス制御、フィッシング／マルウェア調査、ネットワーク分離、Linux、SQL、Pythonのスキルを示しています。'},
+'Recruiter Snapshot':{fr:'Synthèse recruteur',ja:'採用担当者向け概要'},
+'Primary target':{fr:'Postes visés',ja:'希望職種'},
+'Junior Cybersecurity · IAM · SOC L1':{fr:'Cybersécurité junior · IAM · SOC L1',ja:'ジュニア サイバーセキュリティ · IAM · SOC L1'},
+'Credential':{fr:'Certification',ja:'資格'},
+'Google Cybersecurity · Completed':{fr:'Google Cybersecurity · Terminé',ja:'Google Cybersecurity · 修了'},
+'Current learning':{fr:'Formation en cours',ja:'現在の学習'},
+'Microsoft Cybersecurity Analyst · In progress':{fr:'Microsoft Cybersecurity Analyst · En cours',ja:'Microsoft Cybersecurity Analyst · 学習中'},
+'Hands-on evidence':{fr:'Preuves pratiques',ja:'実践実績'},
+'7 security case studies · 10 development projects':{fr:'7 études de cas sécurité · 10 projets développement',ja:'セキュリティ事例 7件 · 開発プロジェクト 10件'},
+'Cybersecurity Case Studies':{fr:'Études de cas cybersécurité',ja:'サイバーセキュリティ・ケーススタディ'},
+'Seven hands-on case studies selected for IAM, SOC L1 and junior cybersecurity recruiting. Each project highlights the problem, investigation or design approach, and the security controls applied.':{fr:'Sept études de cas pratiques sélectionnées pour les recrutements IAM, SOC L1 et cybersécurité junior. Chaque projet présente le problème, l’approche d’investigation ou de conception et les contrôles de sécurité appliqués.',ja:'IAM、SOC L1、ジュニア サイバーセキュリティ採用を意識して選んだ7件の実践ケーススタディです。各プロジェクトで、課題、調査または設計アプローチ、適用したセキュリティ統制を示しています。'},
+'01 — Full-stack application':{fr:'01 — Application full-stack',ja:'01 — フルスタックアプリ'},
+'02 — Front-end application':{fr:'02 — Application front-end',ja:'02 — フロントエンドアプリ'},
+'Skip to content':{fr:'Aller au contenu',ja:'コンテンツへ移動'}
+});
+
 const META={
-en:{title:'Richard | Cybersecurity & Identity Security Portfolio',description:'Junior IAM / Identity Security Analyst and Cybersecurity Analyst portfolio featuring Microsoft Entra ID, SOC, incident response, Python, SQL, Linux and web development projects.'},
-fr:{title:'Richard | Portfolio Cybersécurité & Sécurité des identités',description:'Portfolio junior IAM, sécurité des identités et cybersécurité avec Microsoft Entra ID, SOC, réponse aux incidents, Python, SQL, Linux et projets de développement web.'},
-ja:{title:'Richard | サイバーセキュリティ & IDセキュリティ・ポートフォリオ',description:'Microsoft Entra ID、SOC、インシデント対応、Python、SQL、Linux、Web開発プロジェクトを掲載するジュニアIAM・IDセキュリティ・サイバーセキュリティのポートフォリオ。'}
+en:{title:'Richard | Junior Cybersecurity Analyst · IAM / Identity Security · SOC L1 Portfolio',description:'Junior Cybersecurity Analyst portfolio focused on IAM, identity security and SOC L1, with hands-on Microsoft Entra ID, incident response, Linux, SQL, Python and network security case studies.'},
+fr:{title:'Richard | Analyste cybersécurité junior · IAM / Sécurité des identités · SOC L1',description:'Portfolio d’analyste cybersécurité junior axé IAM, sécurité des identités et SOC L1, avec études de cas Microsoft Entra ID, réponse aux incidents, Linux, SQL, Python et sécurité réseau.'},
+ja:{title:'Richard | ジュニア サイバーセキュリティアナリスト · IAM / IDセキュリティ · SOC L1',description:'IAM、IDセキュリティ、SOC L1を中心に、Microsoft Entra ID、インシデント対応、Linux、SQL、Python、ネットワークセキュリティのケーススタディを掲載するジュニア サイバーセキュリティ・ポートフォリオ。'}
 };
 
 let currentLanguage=localStorage.getItem(LANGUAGE_KEY)||(navigator.language.toLowerCase().startsWith('fr')?'fr':navigator.language.toLowerCase().startsWith('ja')?'ja':'en');
