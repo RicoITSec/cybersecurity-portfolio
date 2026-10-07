@@ -3,8 +3,15 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Cybersecurity & Identity Security Portfolio</title>
-<meta name="description" content="Junior IAM / Identity Security Analyst and Cybersecurity Analyst portfolio featuring Microsoft Entra ID, SOC, incident response, Python, SQL, Linux and web development projects.">\n<link rel="canonical" href="https://ricoitsec.github.io/cybersecurity-portfolio/">\n<meta property="og:url" content="https://ricoitsec.github.io/cybersecurity-portfolio/">
+<title>Richard | Cybersecurity & Identity Security Portfolio</title>
+<meta name="description" content="Junior IAM / Identity Security Analyst and Cybersecurity Analyst portfolio featuring Microsoft Entra ID, SOC, incident response, Python, SQL, Linux and web development projects.">
+<meta name="author" content="Richard">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://ricoitsec.github.io/cybersecurity-portfolio/">
+<meta property="og:title" content="Richard | Cybersecurity & Identity Security Portfolio">
+<meta property="og:description" content="Hands-on junior cybersecurity, IAM and SOC portfolio with identity security, incident response, Linux, SQL, Python and web-development projects.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://ricoitsec.github.io/cybersecurity-portfolio/">
 <meta name="theme-color" content="#08111f" id="theme-color-meta">
 <script>
 (() => {
@@ -30,6 +37,15 @@ footer{padding:32px 0 56px;border-top:1px solid var(--line);color:var(--muted)}
 .theme-toggle{display:inline-flex;align-items:center;gap:8px;padding:11px 14px;border-radius:10px;border:1px solid var(--line);background:var(--panel);color:var(--text);font:inherit;font-weight:750;cursor:pointer}
 .theme-toggle:hover{transform:translateY(-1px)}
 .theme-icon{width:1.1em;text-align:center}
+.case-details{margin-top:16px;border-top:1px solid var(--line);padding-top:14px}
+.case-details summary{cursor:pointer;color:var(--accent);font-weight:750;list-style:none}
+.case-details summary::-webkit-details-marker{display:none}
+.case-details summary::after{content:" +";font-weight:800}
+.case-details[open] summary::after{content:" −"}
+.case-details ul{margin:12px 0 0;padding-left:20px;color:var(--muted)}
+.case-details li+li{margin-top:6px}
+.link-row{display:flex;flex-wrap:wrap;gap:14px;margin-top:14px}
+.legacy-note{display:inline-block;margin-top:10px;color:var(--muted);font-size:.82rem;font-weight:650}
 @media(max-width:520px){.theme-label{display:none}.theme-toggle{width:44px;padding:11px 0;justify-content:center}}
 @media(max-width:800px){.card{grid-column:span 12}.skills{grid-template-columns:1fr 1fr}}@media(max-width:520px){.skills{grid-template-columns:1fr}}
 </style>
@@ -39,7 +55,7 @@ footer{padding:32px 0 56px;border-top:1px solid var(--line);color:var(--muted)}
 <div class="eyebrow">Cybersecurity & Identity Security Portfolio</div>
 <h1>Junior IAM / Identity Security Analyst<br>Cybersecurity Analyst</h1>
 <p class="lead">Hands-on portfolio across identity and access management, Microsoft Entra ID, incident response, phishing analysis, network segmentation, Python, SQL and Linux. Built to demonstrate practical investigation skills, security design thinking and business-aware controls.</p>
-<div class="cta"><a class="btn primary" href="#projects">Cybersecurity Projects</a><a class="btn" href="#development">Development Projects</a><a class="btn" href="#skills">Core Skills</a><a class="btn" href="#certifications">Certifications</a><button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to light theme" aria-pressed="true"><span class="theme-icon" aria-hidden="true">☀</span><span class="theme-label">Light</span></button></div>
+<div class="cta"><a class="btn primary" href="https://ricoitsec.github.io/CV/" target="_blank" rel="noopener">View Online CV ↗</a><a class="btn" href="#projects">Cybersecurity Projects</a><a class="btn" href="#development">Development Projects</a><a class="btn" href="#skills">Core Skills</a><a class="btn" href="#certifications">Certifications</a><button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to light theme" aria-pressed="true"><span class="theme-icon" aria-hidden="true">☀</span><span class="theme-label">Light</span></button></div>
 </div></header>
 <main class="wrap">
 <section id="skills"><h2 class="section-title">Core Skills</h2><div class="skills">
@@ -50,13 +66,13 @@ footer{padding:32px 0 56px;border-top:1px solid var(--line);color:var(--muted)}
 </div></section>
 
 <section id="projects"><h2 class="section-title">Selected Projects</h2><div class="grid">
-<article class="card"><h3>01 — Microsoft Entra ID Migration & Identity Strategy</h3><p>Hybrid identity case study covering Microsoft Entra Connect / Cloud Sync, password hash synchronization, SSO, enterprise applications, MFA, Conditional Access, RBAC, least privilege and joiner-mover-leaver lifecycle controls.</p><div class="tags"><span class="tag">Entra ID</span><span class="tag">Hybrid Identity</span><span class="tag">MFA</span><span class="tag">RBAC</span><span class="tag">JML</span></div></article>
-<article class="card"><h3>02 — Access Control Incident Investigation</h3><p>Investigated a former contractor account retaining privileged access after the recorded end date. Recommended automated offboarding, RBAC, privileged access governance, MFA and dual approval for sensitive changes.</p><div class="tags"><span class="tag">Access Control</span><span class="tag">PAM</span><span class="tag">Audit Logs</span><span class="tag">Least Privilege</span></div></article>
-<article class="card"><h3>03 — Enterprise Security Strategy</h3><p>Created a layered security roadmap for a multi-site organization, covering data protection, anti-phishing, BYOD, MFA, vulnerability management, incident response, backups and centralized IAM.</p><div class="tags"><span class="tag">Risk</span><span class="tag">Data Protection</span><span class="tag">BYOD</span><span class="tag">Incident Response</span></div></article>
-<article class="card"><h3>04 — Network Segmentation Plan</h3><p>Designed VLAN and firewall segmentation for a 52-device environment, isolating finance, servers, mobile and IoT networks to reduce lateral movement and protect sensitive assets.</p><div class="tags"><span class="tag">VLAN</span><span class="tag">Firewall</span><span class="tag">IoT</span><span class="tag">Zero Trust</span></div></article>
-<article class="card"><h3>05 — Phishing Incident Response & Escalation</h3><p>Performed SOC L1 triage on a phishing alert, validated a malicious password-protected executable, documented evidence using the 5 W's framework and escalated the incident to Level 2.</p><div class="tags"><span class="tag">SOC L1</span><span class="tag">Phishing</span><span class="tag">Triage</span><span class="tag">Playbook</span></div></article>
-<article class="card"><h3>06 — Malware & Threat Intelligence Analysis</h3><p>Used VirusTotal to validate a malicious sample, extracted actionable IOCs and mapped observed behavior to MITRE ATT&CK techniques including process injection, obfuscation and command-and-control activity.</p><div class="tags"><span class="tag">VirusTotal</span><span class="tag">IOC</span><span class="tag">MITRE ATT&CK</span><span class="tag">Threat Intel</span></div></article>
-<article class="card"><h3>07 — Security Automation & Investigation</h3><p>Used Python for allow-list access-control automation, SQL/MariaDB for security investigations, and Linux permissions tooling to remediate excessive access and validate least-privilege changes.</p><div class="tags"><span class="tag">Python</span><span class="tag">SQL</span><span class="tag">Linux</span><span class="tag">Automation</span></div></article>
+<article class="card"><h3>01 — Microsoft Entra ID Migration & Identity Strategy</h3><p>Hybrid identity case study covering Microsoft Entra Connect / Cloud Sync, password hash synchronization, SSO, enterprise applications, MFA, Conditional Access, RBAC, least privilege and joiner-mover-leaver lifecycle controls.</p><div class="tags"><span class="tag">Entra ID</span><span class="tag">Hybrid Identity</span><span class="tag">MFA</span><span class="tag">RBAC</span><span class="tag">JML</span></div><details class="case-details"><summary>View case study details</summary><ul><li><strong>Focus:</strong> hybrid identity and secure migration planning.</li><li><strong>Controls:</strong> MFA, Conditional Access, RBAC, SSO and least privilege.</li><li><strong>Lifecycle:</strong> joiner-mover-leaver access governance.</li></ul></details></article>
+<article class="card"><h3>02 — Access Control Incident Investigation</h3><p>Investigated a former contractor account retaining privileged access after the recorded end date. Recommended automated offboarding, RBAC, privileged access governance, MFA and dual approval for sensitive changes.</p><div class="tags"><span class="tag">Access Control</span><span class="tag">PAM</span><span class="tag">Audit Logs</span><span class="tag">Least Privilege</span></div><details class="case-details"><summary>View investigation details</summary><ul><li><strong>Issue:</strong> privileged access remained active after a contractor end date.</li><li><strong>Evidence:</strong> account status and audit-log review.</li><li><strong>Remediation:</strong> automated offboarding, RBAC, MFA and privileged-access governance.</li></ul></details></article>
+<article class="card"><h3>03 — Enterprise Security Strategy</h3><p>Created a layered security roadmap for a multi-site organization, covering data protection, anti-phishing, BYOD, MFA, vulnerability management, incident response, backups and centralized IAM.</p><div class="tags"><span class="tag">Risk</span><span class="tag">Data Protection</span><span class="tag">BYOD</span><span class="tag">Incident Response</span></div><details class="case-details"><summary>View strategy details</summary><ul><li><strong>Scope:</strong> multi-site security architecture and governance.</li><li><strong>Priorities:</strong> phishing resistance, MFA, vulnerability management and backups.</li><li><strong>Identity:</strong> centralized IAM as a core control layer.</li></ul></details></article>
+<article class="card"><h3>04 — Network Segmentation Plan</h3><p>Designed VLAN and firewall segmentation for a 52-device environment, isolating finance, servers, mobile and IoT networks to reduce lateral movement and protect sensitive assets.</p><div class="tags"><span class="tag">VLAN</span><span class="tag">Firewall</span><span class="tag">IoT</span><span class="tag">Zero Trust</span></div><details class="case-details"><summary>View design details</summary><ul><li><strong>Environment:</strong> 52 devices across business and IoT use cases.</li><li><strong>Design:</strong> VLAN separation with firewall-controlled traffic flows.</li><li><strong>Goal:</strong> reduce lateral movement and protect sensitive systems.</li></ul></details></article>
+<article class="card"><h3>05 — Phishing Incident Response & Escalation</h3><p>Performed SOC L1 triage on a phishing alert, validated a malicious password-protected executable, documented evidence using the 5 W's framework and escalated the incident to Level 2.</p><div class="tags"><span class="tag">SOC L1</span><span class="tag">Phishing</span><span class="tag">Triage</span><span class="tag">Playbook</span></div><details class="case-details"><summary>View response details</summary><ul><li><strong>Role:</strong> SOC L1-style alert triage.</li><li><strong>Analysis:</strong> malicious password-protected executable validation.</li><li><strong>Outcome:</strong> evidence documented with the 5 W's and escalated to Level 2.</li></ul></details></article>
+<article class="card"><h3>06 — Malware & Threat Intelligence Analysis</h3><p>Used VirusTotal to validate a malicious sample, extracted actionable IOCs and mapped observed behavior to MITRE ATT&CK techniques including process injection, obfuscation and command-and-control activity.</p><div class="tags"><span class="tag">VirusTotal</span><span class="tag">IOC</span><span class="tag">MITRE ATT&CK</span><span class="tag">Threat Intel</span></div><details class="case-details"><summary>View analysis details</summary><ul><li><strong>Tooling:</strong> VirusTotal for malicious-sample validation.</li><li><strong>Output:</strong> actionable indicators of compromise.</li><li><strong>Mapping:</strong> MITRE ATT&amp;CK behaviors including injection, obfuscation and C2.</li></ul></details></article>
+<article class="card"><h3>07 — Security Automation & Investigation</h3><p>Used Python for allow-list access-control automation, SQL/MariaDB for security investigations, and Linux permissions tooling to remediate excessive access and validate least-privilege changes.</p><div class="tags"><span class="tag">Python</span><span class="tag">SQL</span><span class="tag">Linux</span><span class="tag">Automation</span></div><details class="case-details"><summary>View technical details</summary><ul><li><strong>Python:</strong> allow-list access-control automation.</li><li><strong>SQL/MariaDB:</strong> security-focused investigation queries.</li><li><strong>Linux:</strong> permission remediation and least-privilege validation.</li></ul></details></article>
 </div></section>
 
 
@@ -108,9 +124,10 @@ footer{padding:32px 0 56px;border-top:1px solid var(--line);color:var(--muted)}
 <article class="card">
 <div class="rank">06 — Personal web application</div>
 <h3>Developer CV Website</h3>
-<p>Personal portfolio/CV website using HTML, CSS, JavaScript, PHP, Bootstrap and jQuery, with skills, experience, portfolio and contact sections.</p>
+<p>Earlier personal portfolio/CV website using HTML, CSS, JavaScript, PHP, Bootstrap and jQuery, with skills, experience, portfolio and contact sections.</p>
 <div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">PHP</span><span class="tag">Bootstrap</span></div>
-<a class="project-link" href="https://github.com/RicoITSec/CV" target="_blank" rel="noopener noreferrer">View source repository →</a>
+<a class="project-link" href="https://github.com/Rico-9/CV" target="_blank" rel="noopener noreferrer">View legacy source repository →</a>
+<span class="legacy-note">Legacy source — migration to RicoITSec pending.</span>
 </article>
 
 <article class="card">
@@ -127,6 +144,24 @@ footer{padding:32px 0 56px;border-top:1px solid var(--line);color:var(--muted)}
 <p>Multi-page photography portfolio with navigation, gallery presentation, project content and a contact form layout.</p>
 <div class="tags"><span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">Forms</span><span class="tag">Portfolio UI</span></div>
 <a class="project-link" href="https://github.com/RicoITSec/Robbie-Lens" target="_blank" rel="noopener noreferrer">View source repository →</a>
+</article>
+
+<article class="card">
+<div class="rank">09 — Foundational responsive site</div>
+<h3>Travel Agency — HTML / CSS Landing Site</h3>
+<p>Foundational travel-agency landing page demonstrating page structure, navigation, section layout and core HTML/CSS integration.</p>
+<div class="tags"><span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">Landing Page</span></div>
+<a class="project-link" href="https://github.com/Rico-9/Travel-agency" target="_blank" rel="noopener noreferrer">View legacy source repository →</a>
+<span class="legacy-note">Legacy source — migration to RicoITSec pending.</span>
+</article>
+
+<article class="card">
+<div class="rank">10 — Learning archive</div>
+<h3>Python Fundamentals Exercises</h3>
+<p>Structured Python coursework exercises covering programming fundamentals. Included as a learning archive rather than a production application.</p>
+<div class="tags"><span class="tag">Python</span><span class="tag">Fundamentals</span><span class="tag">Coursework</span></div>
+<a class="project-link" href="https://github.com/Rico-9/7168871-apprenez-les-bases-du-langage-python" target="_blank" rel="noopener noreferrer">View legacy source repository →</a>
+<span class="legacy-note">Legacy source — migration to RicoITSec pending.</span>
 </article>
 
 
@@ -146,7 +181,9 @@ footer{padding:32px 0 56px;border-top:1px solid var(--line);color:var(--muted)}
 <div class="row"><strong>Italian</strong><span>Basic</span></div>
 </div></section>
 </main>
-<footer><div class="wrap">Cybersecurity, Identity Security & Development Portfolio — Updated October 2026</div></footer>
+<footer><div class="wrap">Cybersecurity, Identity Security & Development Portfolio — Updated October 2026
+<div class="link-row"><a class="project-link" href="https://ricoitsec.github.io/CV/" target="_blank" rel="noopener">Online CV ↗</a><a class="project-link" href="https://github.com/RicoITSec" target="_blank" rel="noopener">GitHub ↗</a></div>
+</div></footer>
 <script>
 const THEME_KEY='rico-theme';
 function applyTheme(theme){
