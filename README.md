@@ -21,7 +21,6 @@ Professional portfolio focused on junior IAM, identity security, SOC and cyberse
 7. **Top 5 Actrices** — jQuery, DOM interaction, animation
 8. **Robbie Lens** — Multi-page photography portfolio
 9. **Travel Agency** — Foundational HTML/CSS landing page (legacy source currently under `Rico-9/Travel-agency`)
-10. **Python Fundamentals Exercises** — Python coursework archive (legacy source currently under `Rico-9/7168871-apprenez-les-bases-du-langage-python`)
 
 Most recruiter-facing development projects are now consolidated under `RicoITSec`; the remaining legacy repositories are clearly identified in the live portfolio while migration is pending.
 
