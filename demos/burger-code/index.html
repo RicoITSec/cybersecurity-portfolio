@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Burger Code — Portfolio Demo</title>
+  <meta name="description" content="Static portfolio preview of Burger Code, originally built with PHP, PDO and MySQL.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css?family=Holtwood+One+SC" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <style>
+    body{margin:0;background:#111 url('https://raw.githubusercontent.com/RicoITSec/Burger-Code/main/images/bg.png');font-family:Arial,sans-serif}
+    .site{padding-bottom:50px}.text-logo{font-family:"Holtwood One SC",sans-serif;color:#e7480f;text-shadow:2px 2px #ffd301;font-size:50px;padding:40px 0;text-align:center}.text-logo .glyphicon{color:#ffd301;text-shadow:none}
+    .portfolio-note{margin:20px auto 0;max-width:900px;padding:12px 16px;border-radius:8px;background:#fff3cd;color:#6b5600;text-align:center}
+    .category-tabs{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 32px;padding:0;list-style:none}.category-tabs button{border:0;border-radius:4px;padding:10px 15px;background:#fff;color:#333;font-weight:700;cursor:pointer}.category-tabs button.active{background:#e7480f;color:#fff}
+    .menu-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}.menu-card{position:relative;background:#fff;border-radius:6px;padding:4px 4px 16px;box-shadow:0 1px 4px rgba(0,0,0,.2)}.menu-card img{width:100%;display:block;background:#ffd301}.menu-card h3{margin:14px 12px 8px;color:#e7480f;font-weight:700}.menu-card p{margin:0 12px 14px;min-height:44px;color:#555}.price{position:absolute;right:4px;top:20px;padding:5px 10px;border-radius:3px;background:#5cb85c;color:#fff;text-shadow:2px 2px #333;font-size:20px}.demo-button{display:block;margin:0 12px;padding:10px;text-align:center;background:#e7480f;color:#fff;border-radius:4px;font-weight:700}
+    .source{text-align:center;margin:28px 0}.source a{display:inline-block;padding:10px 14px;border-radius:8px;background:#fff;color:#222;text-decoration:none;font-weight:700}
+    @media(max-width:900px){.menu-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:600px){.menu-grid{grid-template-columns:1fr}.text-logo{font-size:34px}.portfolio-note{margin-left:12px;margin-right:12px}}
+  </style>
+</head>
+<body>
+  <div class="portfolio-note">Static portfolio preview — the original project uses PHP, PDO and MySQL. The backend and CRUD administration are available in the source repository.</div>
+  <main class="container site">
+    <h1 class="text-logo"><span class="glyphicon glyphicon-cutlery"></span> Burger Code <span class="glyphicon glyphicon-cutlery"></span></h1>
+    <ul class="category-tabs" id="tabs"></ul>
+    <div class="menu-grid" id="menu"></div>
+    <p class="source"><a href="https://github.com/RicoITSec/Burger-Code" target="_blank" rel="noopener noreferrer">View PHP / MySQL source on GitHub ↗</a></p>
+  </main>
+<script>
+const base='https://raw.githubusercontent.com/RicoITSec/Burger-Code/main/images/';
+const categories=['Menus','Burgers','Snacks','Salades','Boissons','Desserts'];
+const items=[
+['Menus','Menu Classic','Burger, salade, tomate, cornichon + frites + boisson',8.90,'m1.png'],['Menus','Menu Bacon','Burger, fromage, bacon, salade, tomate + frites + boisson',9.50,'m2.png'],['Menus','Menu Big','Double burger, fromage, cornichon, salade + frites + boisson',10.90,'m3.png'],['Menus','Menu Chicken','Poulet frit, tomate, salade, mayonnaise + frites + boisson',9.90,'m4.png'],['Menus','Menu Fish','Poisson, salade, mayonnaise, cornichon + frites + boisson',10.90,'m5.png'],['Menus','Menu Double Steak','Double burger, fromage, bacon, salade, tomate + frites + boisson',11.90,'m6.png'],
+['Burgers','Classic','Burger, salade, tomate, cornichon',5.90,'b1.png'],['Burgers','Bacon','Burger, fromage, bacon, salade, tomate',6.50,'b2.png'],['Burgers','Big','Double burger, fromage, cornichon, salade',6.90,'b3.png'],['Burgers','Chicken','Poulet frit, tomate, salade, mayonnaise',5.90,'b4.png'],['Burgers','Fish','Poisson pané, salade, mayonnaise, cornichon',6.50,'b5.png'],['Burgers','Double Steak','Double burger, fromage, bacon, salade, tomate',7.50,'b6.png'],
+['Snacks','Frites','Pommes de terre frites',3.90,'s1.png'],['Snacks','Onion Rings',"Rondelles d'oignon frites",3.40,'s2.png'],['Snacks','Nuggets','Nuggets de poulet frits',5.90,'s3.png'],['Snacks','Nuggets Fromage','Nuggets de fromage frits',3.50,'s4.png'],['Snacks','Ailes de Poulet','Ailes de poulet barbecue',5.90,'s5.png'],
+['Salades','César Poulet Pané','Poulet pané, salade, tomate, sauce César',8.90,'sa1.png'],['Salades','César Poulet Grillé','Poulet grillé, salade, tomate, sauce César',8.90,'sa2.png'],['Salades','Salade Light','Salade, tomate, concombre, maïs, vinaigre balsamique',5.90,'sa3.png'],['Salades','Poulet Pané','Poulet pané, salade, tomate, sauce au choix',7.90,'sa4.png'],['Salades','Poulet Grillé','Poulet grillé, salade, tomate, sauce au choix',7.90,'sa5.png'],
+['Boissons','Coca-Cola','Petit, moyen ou grand',1.90,'bo1.png'],['Boissons','Coca-Cola Light','Petit, moyen ou grand',1.90,'bo2.png'],['Boissons','Coca-Cola Zéro','Petit, moyen ou grand',1.90,'bo3.png'],['Boissons','Fanta','Petit, moyen ou grand',1.90,'bo4.png'],['Boissons','Sprite','Petit, moyen ou grand',1.90,'bo5.png'],['Boissons','Nestea','Petit, moyen ou grand',1.90,'bo6.png'],
+['Desserts','Fondant au chocolat','Chocolat blanc ou au lait',4.90,'d1.png'],['Desserts','Muffin','Fruits ou chocolat',2.90,'d2.png'],['Desserts','Beignet','Chocolat ou vanille',2.90,'d3.png'],['Desserts','Milkshake','Fraise, vanille ou chocolat',3.90,'d4.png'],['Desserts','Sundae','Fraise, caramel ou chocolat',4.90,'d5.png']
+];
+const tabs=document.getElementById('tabs'),menu=document.getElementById('menu');
+function render(category){[...tabs.querySelectorAll('button')].forEach(b=>b.classList.toggle('active',b.dataset.category===category));menu.innerHTML=items.filter(i=>i[0]===category).map(i=>`<article class="menu-card"><img src="${base+i[4]}" alt="${i[1]}"><div class="price">${i[3].toFixed(2)} €</div><h3>${i[1]}</h3><p>${i[2]}</p><span class="demo-button">Commander</span></article>`).join('')}
+categories.forEach(category=>{const li=document.createElement('li'),b=document.createElement('button');b.type='button';b.dataset.category=category;b.textContent=category;b.addEventListener('click',()=>render(category));li.appendChild(b);tabs.appendChild(li)});render(categories[0]);
+</script>
+</body>
+</html>
