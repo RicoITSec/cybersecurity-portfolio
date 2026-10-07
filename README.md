@@ -31,3 +31,16 @@ https://ricoitsec.github.io/cybersecurity-portfolio/
 ## Online CV
 
 https://ricoitsec.github.io/CV/
+
+
+## Live project demos
+
+- OhMyFood — https://rico-9.github.io/P3/
+- La Chouette Agence — https://rico-9.github.io/P4/
+- Snake — https://rico-9.github.io/Snake/
+- Reservia — https://rico-9.github.io/OCR_P2/
+- Top 5 Actrices — https://rico-9.github.io/Top-5-actrices/
+- Robbie Lens — https://rico-9.github.io/Robbie-Lens/
+- Travel Agency — https://rico-9.github.io/Travel-agency/
+
+Burger Code is a server-side PHP/MySQL project, so GitHub Pages cannot run the application; the repository is the primary review path.
